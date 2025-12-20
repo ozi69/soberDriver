@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     gap: 5rem;
   }
@@ -12,7 +12,7 @@
   flex-direction: column;
   gap: 3.8rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     gap: 2rem;
   }
 }
@@ -21,8 +21,8 @@
   align-items: center;
   gap: 0.5rem;
 
-  font-family: Heading Now;
-  font-weight: 500;
+  font-family: Heading Now extrabold;
+  letter-spacing: 0.1rem;
   font-size: 2rem;
   line-height: 2.4rem;
   color: var(--color-white__def);
@@ -62,7 +62,7 @@
   display: flex;
   gap: 12rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     gap: 5rem;
   }
 }
@@ -97,8 +97,8 @@
 .foo-nav__dop-title {
   color: var(--color-white__def);
 
-  font-family: Heading Now;
-  font-weight: 500;
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: -1%;

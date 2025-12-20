@@ -1,0 +1,78 @@
+.container-comments {
+  display: flex;
+  gap: 2.4rem;
+
+  overflow-x: scroll;
+  padding-inline: 7.2rem;
+
+  cursor: grab;
+
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container-comments:active {
+  cursor: grabbing;
+}
+.card-comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+
+  min-width: 41.6rem;
+  height: 37.6rem;
+  padding: 3.2rem;
+  border: 0.1rem solid var(--color-gray--200);
+  border-radius: var(--border-16r);
+
+  @media (max-width: 768px) {
+    padding: 2.4rem;
+  }
+}
+.card-comment__img {
+  width: 12.8rem;
+  height: 12.8rem;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card-comment__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.card-comment__content-span {
+  font-family: Heading Now medium;
+  letter-spacing: 0.1rem;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+
+  color: var(--color-puple--500);
+}
+.card-comment__hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-comment__hgroup-title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+
+  color: var(--color-black__def-1000);
+}
+.card-comment__hgroup-text {
+  font-family: Inter;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+
+  text-align: center;
+  color: var(--color-black__def-1000);
+}

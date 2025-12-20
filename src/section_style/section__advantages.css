@@ -11,7 +11,7 @@
   width: 12.8rem;
   height: 12.8rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 10rem;
     height: 10rem;
   }
@@ -23,8 +23,8 @@
   gap: 1.2rem;
 }
 .card-hgroup__title {
-  font-family: Heading Now;
-  font-weight: 500;
+  font-family: Heading Now extrabold;
+  letter-spacing: 0.1rem;
   font-size: 2.4rem;
   line-height: 2.8rem;
 
@@ -39,12 +39,12 @@
   text-align: center;
   color: var(--color-black__def-1000);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 1.8rem;
   }
 }
 .card-hgroup__text br {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }

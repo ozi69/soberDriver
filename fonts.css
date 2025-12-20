@@ -7,9 +7,33 @@
 }
 
 @font-face {
-  font-family: "Heading Now";
-  src: url("src/fonts/Heading_Now/Heading-Now-35-Medium-trial.ttf")
+  font-family: "Heading Now bold";
+  src: url("src/fonts/Heading_Now/Heading_Now_bold.woff") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heading Now book";
+  src: url("src/fonts/Heading_Now/Heading_Now_book.woff") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heading Now extrabold";
+  src: url("src/fonts/Heading_Now/Heading_Now_extrabold.woff")
     format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heading Now medium";
+  src: url("src/fonts/Heading_Now/Heading_Now_medium.woff") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Heading Now regular";
+  src: url("src/fonts/Heading_Now/Heading_Now_regular.woff") format("truetype");
   font-style: normal;
   font-display: swap;
 }

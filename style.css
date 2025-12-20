@@ -6,6 +6,8 @@
 /* секции */
 @import url(./src/section_style/section__advantages.css);
 @import url(./src/section_style/section__app.css);
+@import url(./src/section_style/section__work.css);
+@import url(./src/section_style/section__comment.css);
 
 /* цвета */
 
@@ -27,6 +29,9 @@
   /*  */
 
   --border-6r: 0.6rem;
+  --border-12r: 1.2rem;
+  --border-16r: 1.6rem;
+  --border-24r: 2.4rem;
 }
 
 /* настройка страницы */
@@ -49,7 +54,7 @@
   padding: 8rem 7.2rem;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 4rem 2rem;
   }
 }
@@ -57,8 +62,16 @@
   padding: 4.8rem 7.2rem;
   position: relative;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 4rem 2rem;
+  }
+}
+._container-alt2 {
+  padding: 8rem 0;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4rem 0;
   }
 }
 
@@ -66,7 +79,7 @@ header {
   background-color: var(--color-white__def);
   padding: 2.2rem 7.2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 1.6rem 2rem;
   }
 }
@@ -75,7 +88,7 @@ footer {
   background-color: var(--color-black__def-1000);
   padding: 6.4rem 7.2rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 4rem 2rem 2rem;
   }
 }
@@ -83,7 +96,8 @@ footer {
 /* btn */
 
 .btn-primary {
-  font-family: Heading Now;
+  font-family: Heading Now bold;
+  letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -95,7 +109,8 @@ footer {
   background-color: var(--color-white__def);
 }
 .btn-second {
-  font-family: Heading Now;
+  font-family: Heading Now bold;
+  letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -114,15 +129,16 @@ footer {
   text-align: center;
 }
 .hgroup-head__up {
-  font-family: Heading Now;
-  font-weight: 500;
+  font-family: Heading Now medium;
+  letter-spacing: 0.1rem;
+  /* font-weight: 500; */
   font-size: 2.4rem;
   line-height: 2.8rem;
   text-transform: uppercase;
 
   color: var(--color-puple--500);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 1.8rem;
   }
 }
@@ -133,15 +149,14 @@ footer {
   gap: 0.4rem;
 }
 .hgroup-head__title {
-  font-family: Heading Now;
-  font-weight: 500;
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
   font-size: 5.6rem;
 
   color: var(--color-black__def-1000);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 2.8rem;
-    letter-spacing: -0.1rem;
   }
 }
 .hgroup-head__text {
@@ -149,7 +164,6 @@ footer {
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.8rem;
-  letter-spacing: -2%;
 
   color: var(--color-black__def-1000);
 }
@@ -157,7 +171,7 @@ footer {
 .container-def {
   margin-top: 5.6rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-top: 4rem;
   }
 }
@@ -166,7 +180,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 6.4rem 2.4rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
   }
