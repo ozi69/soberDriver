@@ -13,7 +13,15 @@ body {
 
   height: 100%;
 
-  font-size: 0.694444vw;
+  font-size: 0.3875vw;
+
+  @media (max-width: 2440px) {
+    font-size: 0.52083vw;
+  }
+
+  @media (max-width: 1920px) {
+    font-size: 0.694444vw;
+  }
 
   @media (max-width: 767px) {
     font-size: 1.5625vw;
