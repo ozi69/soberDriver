@@ -1,0 +1,143 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+.footer-block__one {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+
+  @media (max-width: 768px) {
+    gap: 2rem;
+  }
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-family: Heading Now;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: var(--color-white__def);
+}
+.footer-logo__img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+.block-one__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.block-one__content p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  color: var(--color-gray--alt);
+}
+.footer-social__icon {
+  display: flex;
+}
+.footer-social__icon a {
+  width: 4rem;
+  height: 4rem;
+}
+.footer-social__icon a img {
+}
+.footer-block__two {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.foo-nav {
+  display: flex;
+  gap: 12rem;
+
+  @media (max-width: 768px) {
+    gap: 5rem;
+  }
+}
+.foo-nav__box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.foo-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.foo-nav__list-item {
+}
+.foo-nav__item-link {
+  color: var(--color-gray--alt);
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+.foo-nav__item-link:hover {
+  color: var(--color-white__def);
+}
+.foo-nav__dop {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.foo-nav__dop-title {
+  color: var(--color-white__def);
+
+  font-family: Heading Now;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+}
+.foo-nav__dop-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.foo-nav__dop-item {
+}
+.foo-nav__dop-link {
+  color: var(--color-gray--alt);
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+.foo-nav__dop-link:hover {
+  color: var(--color-white__def);
+}
+
+.text-stars {
+  color: var(--color-gray--alt);
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.footer-block__three {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-block__dowload {
+  width: 21.2rem;
+  height: 6.4rem;
+}

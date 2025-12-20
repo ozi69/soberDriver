@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Inter";
+  src: url("src//fonts/Inter/Inter-VariableFont_opsz\,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Heading Now";
+  src: url("src/fonts/Heading_Now/Heading-Now-35-Medium-trial.ttf")
+    format("truetype");
+  font-style: normal;
+  font-display: swap;
+}

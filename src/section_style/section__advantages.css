@@ -1,0 +1,50 @@
+.section-advantages {
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+.card-img {
+  width: 12.8rem;
+  height: 12.8rem;
+
+  @media (max-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+.card-hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.card-hgroup__title {
+  font-family: Heading Now;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+
+  color: var(--color-black__def-1000);
+}
+.card-hgroup__text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: -2%;
+  text-align: center;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+}
+.card-hgroup__text br {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
