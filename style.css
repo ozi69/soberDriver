@@ -8,11 +8,13 @@
 @import url(./src/section_style/section__app.css);
 @import url(./src/section_style/section__work.css);
 @import url(./src/section_style/section__comment.css);
+@import url(./src/section_style/section__geo.css);
 
 /* цвета */
 
 :root {
   --color-black__def-1000: rgb(24, 24, 27);
+  --color-black__800: #363639;
   --color-black__lighten-50: rgb(135, 135, 138);
   --color-black__def-1000_01: rgba(24, 24, 27, 0.1);
   --color-puple--500: rgb(124, 97, 245);
@@ -23,6 +25,7 @@
   --color-gray--200: #eaeaed;
   --color-gray--alt2: #f4f4f7;
   --color-gray--alt3: #f7f7ff;
+  --color-gray--alt4: #cccccf;
   --color-green: #00ac00;
   --color-blue: #00a1ff;
 
@@ -131,7 +134,6 @@ footer {
 .hgroup-head__up {
   font-family: Heading Now medium;
   letter-spacing: 0.1rem;
-  /* font-weight: 500; */
   font-size: 2.4rem;
   line-height: 2.8rem;
   text-transform: uppercase;
@@ -183,5 +185,19 @@ footer {
   @media (max-width: 767px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
+  }
+}
+.container-grab {
+  overflow-x: scroll;
+  padding-inline: 7.2rem;
+
+  cursor: grab;
+
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @media (max-width: 767px) {
+    padding-inline: 1.6rem;
   }
 }

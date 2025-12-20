@@ -1,0 +1,148 @@
+.section-geography {
+  background-color: var(--color-black__def-1000);
+}
+
+.geo-head__title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-white__def);
+
+  @media (max-width: 767px) {
+    font-size: 3.4rem;
+    line-height: 100%;
+  }
+}
+.geo-head__title br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+.geo-head__title-span {
+  color: var(--color-puple--500);
+}
+.container-geo {
+  display: flex;
+  gap: 6.4rem;
+
+  overflow-x: scroll;
+  padding-inline: 7.2rem;
+
+  cursor: grab;
+
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  @media (max-width: 767px) {
+    padding-inline: 1.6rem;
+
+    gap: 3rem;
+  }
+}
+.card-geo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  min-width: 31rem;
+  height: 40rem;
+
+  @media (max-width: 767px) {
+    width: 26rem;
+    height: 34rem;
+  }
+}
+.card-geo__img {
+  width: 31rem;
+  height: 30rem;
+
+  position: relative;
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    width: 26rem;
+    height: 25rem;
+  }
+
+  &::before {
+    content: "";
+    width: 14rem;
+    height: 10rem;
+    filter: blur(7rem);
+    opacity: 0.4;
+    background-color: var(--color-puple--500);
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 767px) {
+      filter: blur(5rem);
+    }
+  }
+
+  &::after {
+    content: "";
+    width: 31rem;
+    height: 30rem;
+
+    background: radial-gradient(
+      79.51% 100% at 50% 0%,
+      rgba(24, 24, 27, 0) 50.34%,
+      #18181b 100%
+    );
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 767px) {
+      width: 26rem;
+      height: 24rem;
+    }
+  }
+}
+.card-geo__hgroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+
+  @media (max-width: 767px) {
+    gap: 0.4rem;
+  }
+}
+.card-geo__hgroup-title {
+  font-family: Heading Now regular;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+
+  color: var(--color-white__def);
+
+  @media (max-width: 767px) {
+    font-size: 2.8rem;
+  }
+}
+.card-geo__hgroup-text {
+  font-family: Heading Now regular;
+  font-size: 2rem;
+  line-height: 2.4rem;
+
+  color: var(--color-gray--alt4);
+  padding: 0.8rem 1.2rem;
+  border-radius: var(--border-6r);
+  border: 0.1rem solid var(--color-black__800);
+
+  @media (max-width: 767px) {
+    font-size: 1.4rem;
+  }
+}

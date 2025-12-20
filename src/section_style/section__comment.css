@@ -1,15 +1,6 @@
 .container-comments {
   display: flex;
   gap: 2.4rem;
-
-  overflow-x: scroll;
-  padding-inline: 7.2rem;
-
-  cursor: grab;
-
-  overflow-x: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .container-comments:active {
@@ -29,6 +20,11 @@
 
   @media (max-width: 768px) {
     padding: 2.4rem;
+
+    gap: 2.5rem;
+
+    height: 32rem;
+    min-width: 36rem;
   }
 }
 .card-comment__img {
@@ -37,6 +33,11 @@
 
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 9rem;
+    height: 9rem;
+  }
 }
 .card-comment__content {
   display: flex;
@@ -51,6 +52,10 @@
   line-height: 2.8rem;
 
   color: var(--color-puple--500);
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem;
+  }
 }
 .card-comment__hgroup {
   display: flex;
@@ -65,6 +70,10 @@
   line-height: 3.2rem;
 
   color: var(--color-black__def-1000);
+
+  @media (max-width: 768px) {
+    font-size: 2.6rem;
+  }
 }
 .card-comment__hgroup-text {
   font-family: Inter;
@@ -73,6 +82,15 @@
   font-size: 2rem;
   line-height: 2.8rem;
 
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
   text-align: center;
   color: var(--color-black__def-1000);
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+  }
 }

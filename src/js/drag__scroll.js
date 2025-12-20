@@ -1,29 +1,51 @@
-const container = document.querySelector('.container-comments');
-let isDown = false;
-let startX;
-let scrollLeft;
+class DragScroll {
+  constructor(container) {
+    this.container = container;
+    this.isDown = false;
+    this.startX = 0;
+    this.scrollLeft = 0;
+    
+    this.init();
+  }
+  
+  init() {
+    this.container.addEventListener('mousedown', this.onMouseDown.bind(this));
+    this.container.addEventListener('mouseleave', this.onMouseLeave.bind(this));
+    this.container.addEventListener('mouseup', this.onMouseUp.bind(this));
+    this.container.addEventListener('mousemove', this.onMouseMove.bind(this));
+  }
+  
+  onMouseDown(e) {
+    this.isDown = true;
+    this.container.classList.add('dragging');
+    this.startX = e.pageX - this.container.offsetLeft;
+    this.scrollLeft = this.container.scrollLeft;
+  }
+  
+  onMouseLeave() {
+    this.isDown = false;
+    this.container.classList.remove('dragging');
+  }
+  
+  onMouseUp() {
+    this.isDown = false;
+    this.container.classList.remove('dragging');
+  }
+  
+  onMouseMove(e) {
+    if (!this.isDown) return;
+    e.preventDefault();
+    const x = e.pageX - this.container.offsetLeft;
+    const walk = (x - this.startX) * 2;
+    this.container.scrollLeft = this.scrollLeft - walk;
+  }
+}
 
-container.addEventListener('mousedown', (e) => {
-  isDown = true;
-  container.classList.add('dragging');
-  startX = e.pageX - container.offsetLeft;
-  scrollLeft = container.scrollLeft;
-});
+// Использование
+const commentContainer = new DragScroll(document.querySelector('.container-comments'));
+const geoContainer = new DragScroll(document.querySelector('.container-geo'));
 
-container.addEventListener('mouseleave', () => {
-  isDown = false;
-  container.classList.remove('dragging');
-});
-
-container.addEventListener('mouseup', () => {
-  isDown = false;
-  container.classList.remove('dragging');
-});
-
-container.addEventListener('mousemove', (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - container.offsetLeft;
-  const walk = (x - startX) * 2; // Множитель для скорости скролла
-  container.scrollLeft = scrollLeft - walk;
+// Или для всех элементов с классом .drag-scroll
+document.querySelectorAll('.drag-scroll').forEach(container => {
+  new DragScroll(container);
 });
