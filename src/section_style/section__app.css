@@ -43,13 +43,25 @@
   }
 }
 .app-hgroup__title {
-  font-family: Heading Now medium;
+  font-family: Heading Now regular;
   letter-spacing: 0.1rem;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 4rem;
   line-height: 4.8rem;
 
   color: var(--color-white__def);
+  text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  br {
+    @media (max-width: 767px) {
+      display: none;
+      font-size: 3rem;
+    }
+  }
 }
 .app-hgroup__text {
   font-family: Inter;
@@ -59,6 +71,11 @@
   letter-spacing: -2%;
 
   color: var(--color-white__def);
+
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
 }
 .container-app_links {
   display: flex;

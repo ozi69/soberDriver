@@ -46,7 +46,8 @@
   gap: 0.4rem;
 }
 .card-comment__content-span {
-  font-family: Heading Now medium;
+  font-family: Heading Now regular;
+  font-weight: 600;
   letter-spacing: 0.1rem;
   font-size: 2.4rem;
   line-height: 2.8rem;

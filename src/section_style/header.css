@@ -232,14 +232,16 @@
 }
 
 .header-btn_one {
-  font-family: Heading Now bold;
+  font-family: Heading Now regular;
   letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
+
+  
 }
 .header-btn_two {
-  font-family: Heading Now bold;
+  font-family: Heading Now regular;
   letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 1.6rem;
