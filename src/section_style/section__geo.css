@@ -92,7 +92,6 @@
   &::after {
     content: "";
     width: 31rem;
-    height: 30rem;
 
     background: radial-gradient(
       79.51% 100% at 50% 0%,
@@ -101,12 +100,10 @@
     );
 
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
 
     @media (max-width: 767px) {
       width: 26rem;
-      height: 24rem;
     }
   }
 }

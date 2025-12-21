@@ -9,6 +9,9 @@
 @import url(./src/section_style/section__work.css);
 @import url(./src/section_style/section__comment.css);
 @import url(./src/section_style/section__geo.css);
+@import url(./src/section_style/section__cta.css);
+@import url(./src/section_style/section__faq.css);
+@import url(./src/section_style/section__tg.css);
 
 /* цвета */
 
@@ -77,6 +80,14 @@
     padding: 4rem 0;
   }
 }
+._container-alt3 {
+  padding: 0 7.2rem;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 0 2rem;
+  }
+}
 
 header {
   background-color: var(--color-white__def);
@@ -99,12 +110,6 @@ footer {
 /* btn */
 
 .btn-primary {
-  font-family: Heading Now bold;
-  letter-spacing: 0.1rem;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
-
   color: var(--color-puple--500);
   padding: 1rem 1.6rem;
   border-radius: var(--border-6r);
@@ -112,18 +117,38 @@ footer {
   background-color: var(--color-white__def);
 }
 .btn-second {
-  font-family: Heading Now bold;
-  letter-spacing: 0.1rem;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
-
   color: var(--color-white__def);
   padding: 1rem 1.6rem;
   border-radius: var(--border-6r);
   background-color: var(--color-puple--500);
 }
+.btn-third {
+  color: var(--color-white__def);
+  padding: 1.6rem 4.8rem;
+  border-radius: var(--border-6r);
+  background-color: var(--color-puple--500);
 
+  box-shadow: 0 0 1.6rem 0 #7c60f540;
+}
+.btn-tg {
+  box-shadow: 0 0 1.6rem 0 #00a1ff40;
+  background-color: var(--color-blue);
+
+  border-radius: var(--border-12r);
+  padding: 1.4rem 2rem;
+  color: var(--color-white__def);
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  .tg-link__svg {
+    svg {
+      width: 2.8rem;
+      height: 2.8rem;
+    }
+  }
+}
 /*  */
 
 .section-head {
@@ -188,7 +213,6 @@ footer {
   }
 }
 .container-grab {
-  overflow-x: scroll;
   padding-inline: 7.2rem;
 
   cursor: grab;
