@@ -91,7 +91,10 @@
     font-size: 3.2rem;
     line-height: 3.2rem;
 
+    text-wrap: nowrap;
+    
     @media (max-width: 767px) {
+      text-wrap: unset;
       width: 100%;
     }
   }
