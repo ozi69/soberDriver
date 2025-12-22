@@ -16,6 +16,8 @@
 @import url(./src/section_style/section__tg.css);
 @import url(./src/section_style/section__hero2.css);
 @import url(./src/section_style/section__advertiser.css);
+@import url(./src/section_style/section__head.css);
+@import url(./src/section_style/section__blog.css);
 
 /* цвета */
 
@@ -90,6 +92,14 @@
 
   @media (max-width: 767px) {
     padding: 0 2rem;
+  }
+}
+._container-alt4 {
+  padding: 6.4rem 7.2rem 0;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4rem 2rem 0;
   }
 }
 
