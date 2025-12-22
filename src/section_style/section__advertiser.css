@@ -1,0 +1,123 @@
+.section-advertiser {
+  background-color: var(--color-black__def-1000);
+}
+.core-advertiser {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  @media (max-width: 767px) {
+    align-items: unset;
+  }
+}
+.container-advertiser {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  width: 52rem;
+
+  @media (max-width: 767px) {
+    width: unset;
+  }
+}
+.container-advertiser__title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+
+  color: var(--color-white__def);
+
+  @media (max-width: 767px) {
+    font-size: 3.4rem;
+  }
+}
+.form-def {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.form-box {
+  position: relative;
+}
+.label-def {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+
+  color: var(--color-black__800);
+  background-color: var(--color-white__def);
+}
+.input-def {
+  padding: 2.5rem 1.2rem 1rem;
+  border-radius: var(--border-12r);
+  width: 100%;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: var(--color-black__def-1000);
+
+  &::placeholder {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    color: var(--color-gray--alt);
+    transition: 0.3s ease;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+.textarea-def {
+  padding: 2.5rem 1.2rem 1rem;
+  border-radius: var(--border-12r);
+  height: 14.4rem;
+  width: 100%;
+
+  padding: 2.7rem 1.2rem 1.7rem;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: var(--color-black__def-1000);
+
+  &::placeholder {
+    font-family: Inter;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    color: var(--color-gray--alt);
+    transition: 0.3s ease;
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+.form-btn {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-transform: uppercase;
+
+  color: var(--color-white__def);
+  border-radius: var(--border-12r) !important;
+}

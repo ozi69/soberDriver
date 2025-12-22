@@ -1,12 +1,17 @@
 .container-work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* если карточки 3-4 */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2.4rem;
 
   @media (max-width: 767px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.container-work:has(> :nth-child(4):last-child) {
+  /* grid-template-columns: repeat(4, 1fr); */
+}
+
 .card-work {
   border-radius: var(--border-24r);
   border: 0.1rem solid var(--color-gray--alt2);
@@ -51,11 +56,10 @@
   }
 }
 .card-work__img {
-  width: 20rem;
   height: 28.4rem;
+  width: 100%;
 
   @media (max-width: 767px) {
-    width: 18rem;
     height: 20rem;
   }
 }

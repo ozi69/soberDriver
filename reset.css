@@ -50,6 +50,10 @@ select {
   font: inherit;
 }
 
+textarea {
+  outline: none;
+  resize: unset;
+}
 button {
   background: none;
 }

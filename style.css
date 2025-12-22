@@ -6,13 +6,16 @@
 /* секции */
 @import url(./src/section_style/section__advantages.css);
 @import url(./src/section_style/section__app.css);
+@import url(./src/section_style/section__app2.css);
 @import url(./src/section_style/section__work.css);
 @import url(./src/section_style/section__comment.css);
 @import url(./src/section_style/section__geo.css);
 @import url(./src/section_style/section__cta.css);
+@import url(./src/section_style/section__cta2.css);
 @import url(./src/section_style/section__faq.css);
 @import url(./src/section_style/section__tg.css);
 @import url(./src/section_style/section__hero2.css);
+@import url(./src/section_style/section__advertiser.css);
 
 /* цвета */
 
@@ -218,6 +221,12 @@ footer {
   line-height: 2.8rem;
 
   color: var(--color-black__def-1000);
+
+  br {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 }
 
 .container-def {
