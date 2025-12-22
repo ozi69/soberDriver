@@ -1,0 +1,43 @@
+.section-about {
+}
+.container-about {
+}
+.container-about__title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+}
+.container-about__block {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  margin-top: 3rem;
+}
+.container-about__block-text {
+  font-family: Inter;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+.container-video__about {
+  margin-top: 3.2rem;
+}
+.video-about {
+  height: 48rem;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    height: 30rem;
+  }
+}

@@ -20,6 +20,13 @@
 @import url(./src/section_style/section__blog.css);
 @import url(./src/section_style/section__img-back.css);
 @import url(./src/section_style/section__news.css);
+@import url(./src/section_style/aside.css);
+@import url(./src/section_style/section__about.css);
+@import url(./src/section_style/section__services.css);
+@import url(./src/section_style/section__tarifs.css);
+@import url(./src/section_style/section__mobile.css);
+@import url(./src/section_style/section__rewiews.css);
+@import url(./src/section_style/section__contacts.css);
 
 /* цвета */
 
@@ -28,16 +35,17 @@
   --color-black__800: #363639;
   --color-black__lighten-50: rgb(135, 135, 138);
   --color-black__def-1000_01: rgba(24, 24, 27, 0.1);
-  --color-puple--500: rgb(124, 97, 245);
-  --color-puple--600: #5e42d7;
-  --color-puple--alt: #8972eb;
   --color-white__def: #fff;
   --color-gray--alt: #aeaeaf;
   --color-gray--100: #f4f4f7;
   --color-gray--200: #eaeaed;
+  --color-gray--600: #727275;
   --color-gray--alt2: #f4f4f7;
   --color-gray--alt3: #f7f7ff;
   --color-gray--alt4: #cccccf;
+  --color-puple--500: rgb(124, 97, 245);
+  --color-puple--600: #5e42d7;
+  --color-puple--alt: #8972eb;
   --color-green: #00ac00;
   --color-blue: #00a1ff;
 
@@ -47,6 +55,7 @@
   --border-12r: 1.2rem;
   --border-16r: 1.6rem;
   --border-24r: 2.4rem;
+  --border-128r: 12.8rem;
 }
 
 /* настройка страницы */
@@ -103,6 +112,22 @@
 
   @media (max-width: 767px) {
     padding: 4rem 2rem 0;
+  }
+}
+._container-alt5 {
+  padding: 4rem 7.2rem 6.4rem;
+  position: relative;
+
+  @media (max-width: 767px) {
+    padding: 4rem 2rem;
+  }
+}
+._container-page {
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 4rem;
   }
 }
 

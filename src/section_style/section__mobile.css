@@ -1,0 +1,131 @@
+.section-mobile {
+}
+.section-mobile__title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+  }
+}
+.container-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+
+  margin-top: 2.4rem;
+
+  @media (max-width: 767px) {
+    gap: 4rem;
+  }
+}
+.mobile-block_head {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.container-mobile__text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
+.container-mobile__block-img {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.mobile-block__img-link {
+  width: 20rem;
+  height: 6.4rem;
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+.contianer-mobile__arguments {
+}
+.contianer-mobile__arguments-title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: var(--color-black__def-1000);
+}
+.contianer-mobile__arguments-block {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  margin-top: 2.4rem;
+  @media (max-width: 767px) {
+    gap: 2rem;
+  }
+}
+.contianer-mobile__arguments-hgroup {
+}
+.mobile-arguments__hgroup-title {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
+.mobile-arguments__hgroup-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.mobile-list__title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: var(--color-black__def-1000);
+}
+.mobile-list__ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
