@@ -1,0 +1,9 @@
+.section-img__back {
+}
+.section-img__back-img {
+  height: 51.2rem;
+
+  @media (max-width: 767px) {
+    height: 22rem;
+  }
+}

@@ -18,6 +18,8 @@
 @import url(./src/section_style/section__advertiser.css);
 @import url(./src/section_style/section__head.css);
 @import url(./src/section_style/section__blog.css);
+@import url(./src/section_style/section__img-back.css);
+@import url(./src/section_style/section__news.css);
 
 /* цвета */
 
@@ -31,6 +33,7 @@
   --color-puple--alt: #8972eb;
   --color-white__def: #fff;
   --color-gray--alt: #aeaeaf;
+  --color-gray--100: #f4f4f7;
   --color-gray--200: #eaeaed;
   --color-gray--alt2: #f4f4f7;
   --color-gray--alt3: #f7f7ff;

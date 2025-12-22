@@ -1,0 +1,229 @@
+.container-news {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+
+  @media (max-width: 767px) {
+    gap: 4rem;
+  }
+}
+.container-news__date {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+
+  color: var(--color-black__def-1000);
+}
+
+.container-news__title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  font-size: 6.4rem;
+  line-height: 7.6rem;
+  text-transform: uppercase;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+.container-news__text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.news-text__link {
+  color: var(--color-puple--500);
+
+  display: inline;
+}
+.container-news__img {
+  height: 51.2rem;
+
+  @media (max-width: 767px) {
+    height: 20rem;
+  }
+  img {
+    border-radius: var(--border-12r);
+  }
+}
+.container-news__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  li {
+    position: relative;
+    padding-left: 2.5rem;
+
+    @media (max-width: 767px) {
+      padding-left: 1.6rem;
+    }
+
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 2.5rem;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.container-news__span {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+}
+.container-news__error-block {
+  background-color: var(--color-gray--100);
+  padding: 3.2rem;
+  border-radius: var(--border-16r);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  @media (max-width: 767px) {
+    padding: 2.4em 1.6rem;
+  }
+}
+.news-error__hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.news-error__block-img {
+  width: 4rem;
+  height: 4rem;
+}
+.news-error__hgroup-title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--color-black__def-1000);
+}
+.news-error__hgroup-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+.container-news__block {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.container-news__block-title {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: var(--color-black__def-1000);
+
+  @media (max-width: 767px) {
+    font-size: 3.2rem;
+    line-height: 3rem;
+  }
+}
+.container-news__block-text__info {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  padding: 1.6rem 3.2rem;
+  border-left: 0.4rem solid var(--color-puple--500);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    padding: 0.8rem 1.6rem;
+  }
+}
+.container-news__memo-list {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: var(--color-black__def-1000);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+  padding: 3.2rem;
+  border-radius: var(--border-16r);
+  border: 0.1rem solid var(--color-puple--500);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+
+    padding: 0.8rem 1.6rem;
+  }
+
+  li {
+    position: relative;
+    padding-left: 2.5rem;
+
+    @media (max-width: 767px) {
+      padding-left: 1.6rem;
+    }
+    &::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 2.5rem;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
