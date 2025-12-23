@@ -22,7 +22,9 @@
   padding: 3.2rem;
 
   width: 100rem;
+  min-height: 60rem;
 
+  overflow: hidden;
   @media (max-width: 767px) {
     padding: 2.4rem 1.2rem;
 
@@ -55,21 +57,59 @@
   padding: 0.6rem 1.6rem;
   border-radius: var(--border-128r);
 
-  /* time */
-  background-color: var(--color-white__def);
+  transition: 0.3s ease;
 
   @media (max-width: 767px) {
     text-wrap: nowrap;
   }
 }
+.tarifs-tab.active {
+  background-color: var(--color-white__def);
+  color: var(--color-puple--500);
+}
 .block-tarifs {
   display: flex;
+  justify-content: space-between;
   gap: 1.6rem;
+
+  /* анимация */
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  visibility: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
 
   @media (max-width: 767px) {
     flex-direction: column;
   }
 }
+
+/* анимация */
+.block-tarifs.active {
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+  pointer-events: all;
+  position: relative;
+  visibility: visible;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Анимация появления блока */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* КОНЕЦ */
+
 .block-tarifs__price {
   margin-top: 4.8rem;
 
@@ -90,7 +130,52 @@
 
   border-bottom: 0.1rem solid var(--color-gray--100);
   padding-bottom: 1.6rem;
+
+  /* АНИМАЦИЯ */
+  /*  */
+  opacity: 0;
+  transform: translateX(-10rem);
 }
+
+.block-tarifs.active .tarifs-box {
+  animation: slideInLeft 0.5s ease forwards;
+  animation-delay: calc(var(--order, 0) * 0.1s);
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.tarifs-box:nth-child(1) {
+  --order: 1;
+}
+.tarifs-box:nth-child(2) {
+  --order: 2;
+}
+.tarifs-box:nth-child(3) {
+  --order: 3;
+}
+.tarifs-box:nth-child(4) {
+  --order: 4;
+}
+.tarifs-box:nth-child(5) {
+  --order: 5;
+}
+.tarifs-box:nth-child(6) {
+  --order: 6;
+}
+.tarifs-box:nth-child(7) {
+  --order: 7;
+}
+/* КОНЕЦ  */
+
 .tarifs-box__title-head {
   font-family: Heading Now regular;
   letter-spacing: 0.1rem;
@@ -137,6 +222,9 @@
   height: 42rem;
 
   margin-top: auto;
+  /* АНИМАЦИЯ */
+  opacity: 0;
+  transform: translateX(10rem);
 
   @media (max-width: 767px) {
     width: unset;
@@ -144,3 +232,20 @@
     height: 30rem;
   }
 }
+
+.block-tarifs.active .container-tarufs__img {
+  animation: fadeInRight 0.5s ease 0.3s forwards;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* КОНЕЦ */

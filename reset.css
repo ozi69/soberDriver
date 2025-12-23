@@ -14,7 +14,12 @@ body {
 
   height: 100%;
 
-  font-size: 0.3875vw;
+  /* Самые большие экраны 3440px+ */
+  font-size: 0.2907vw; /* 10px на 3440px */
+
+  @media (max-width: 3440px) {
+    font-size: 0.3875vw;
+  }
 
   @media (max-width: 2440px) {
     font-size: 0.52083vw;

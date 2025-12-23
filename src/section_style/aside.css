@@ -46,7 +46,6 @@
     gap: 2rem;
 
     overflow-x: scroll;
-    
   }
 }
 .aside-nav__list-item {
@@ -67,4 +66,10 @@
   &:active {
     color: var(--color-puple--600);
   }
+}
+
+/* Стиль для активной ссылки в навигации */
+.aside-nav__list-item.active {
+  color: var(--color-puple--600) !important;
+  font-weight: 600;
 }

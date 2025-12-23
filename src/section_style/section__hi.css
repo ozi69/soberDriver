@@ -1,11 +1,11 @@
 .section-hi {
 }
-.container-head {
+.container-hi {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
-.container-head__title {
+.container-hi__title {
   font-family: Heading Now regular;
   letter-spacing: 0.1rem;
   font-weight: 700;
@@ -19,7 +19,7 @@
     line-height: 4rem;
   }
 }
-.container-head__text {
+.container-hi__text {
   font-family: Inter;
   font-weight: 500;
   font-size: 2rem;
