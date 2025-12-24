@@ -6,6 +6,8 @@
   <title>Главная</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- SEO-Parameters -->
   <meta name="keywords" content="ключевые слова">
@@ -144,10 +146,115 @@
     <main class="page">
       <!-- hero-section -->
       <section class="section-hero">
-        <div class="container">
-          <div class="continer-hero">
-            <div>
+        <div class="_container">
+          <div class="container-hero__alt">
+            <div class="container-hero__content">
+              <p class="hero-content_info-text">
+                <span class="hero-content_info-marker">
 
+                </span>
+                <span class="counter-people">
+                  168
+                </span>
+                ВОДИТЕЛЯ СЕЙЧАС НА ЛИНИИ
+              </p>
+
+              <div class="hero-content__head">
+                <h1 class="hero-content__head-title">
+                  ТРЕЗВЫЙ ВОДИТЕЛЬ <br>
+                  <span>
+                    ПО МОСКВЕ ЗА 10 МИНУТ
+                  </span>
+                </h1>
+
+                <div class="hero-content__list">
+                  <div class="hero-content__list-item">
+                    <div class="hero-content__list-marker">
+                      <img src="src/img/check_small.svg" alt="">
+                    </div>
+                    Машина приедет за 7–10 минут
+                  </div>
+                  <div class="hero-content__list-item">
+                    <div class="hero-content__list-marker">
+                      <img src="src/img/check_small.svg" alt="">
+                    </div>
+                    Цена известна до начала поездки
+                  </div>
+                  <div class="hero-content__list-item">
+                    <div class="hero-content__list-marker">
+                      <img src="src/img/check_small.svg" alt="">
+                    </div>
+                    Передача авто фиксируется при получении и возврате
+                  </div>
+                </div>
+              </div>
+
+              <div class="block-hero__link">
+                <a href="" class="block-hero__link-item">
+                  <img src="src/img/hero__app-store.svg" alt="">
+                </a>
+                <a href="" class="block-hero__link-item">
+                  <img src="src/img/hero__google-play.svg" alt="">
+                </a>
+                <a href="" class="block-hero__link-item">
+                  <img src="src/img/hero__rustore.svg" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="container-hero__swiper">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="block-img">
+                      <img src="src/img/content-swiper.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-img">
+                      <img src="src/img/content-swiper.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-img">
+                      <img src="src/img/content-swiper.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="block-img">
+                      <img src="src/img/content-swiper.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Пагинация как на скриншоте -->
+              </div>
+              <div class="swiper-pagination"></div>
+              <!-- Кнопки навигации -->
+              <div class="swiper-button-prev">
+                <svg viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1813_22226" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="43" height="43">
+                <rect width="42.6667" height="42.6667" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1813_22226)">
+                <path d="M17.6919 31.3837L7.64062 21.3325L17.6919 11.2812L19.5653 13.2094L12.7756 19.9992H35.0252V22.6658H12.7756L19.5653 29.4556L17.6919 31.3837Z" fill="#7C60F5"/>
+                </g>
+                </svg>
+
+              </div>
+              <div class="swiper-button-next">
+                <svg viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0_1813_22223" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="43" height="43">
+                <rect width="42.6667" height="42.6667" transform="matrix(-1 0 0 1 42.6667 0)" fill="#D9D9D9"/>
+                </mask>
+                <g mask="url(#mask0_1813_22223)">
+                <path d="M24.9748 31.3837L35.026 21.3325L24.9748 11.2812L23.1013 13.2094L29.8911 19.9992H7.64151V22.6658H29.8911L23.1013 29.4556L24.9748 31.3837Z" fill="#7C60F5"/>
+                </g>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -951,5 +1058,7 @@
   
   <script src="src/js/burger.js"></script>
   <script src="src/js/drag__scroll.js"></script>
+  <script src="src/js/counter__people.js"></script>
+  <script src="src/js/swiper.js"></script>
 </body>
 </html>

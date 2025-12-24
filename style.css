@@ -14,7 +14,7 @@
 @import url(./src/section_style/section__cta2.css);
 @import url(./src/section_style/section__faq.css);
 @import url(./src/section_style/section__tg.css);
-@import url(./src/section_style/section__hero2.css);
+@import url(./src/section_style/section__hero.css);
 @import url(./src/section_style/section__advertiser.css);
 @import url(./src/section_style/section__hi.css);
 @import url(./src/section_style/section__blog.css);
@@ -55,6 +55,8 @@
   --border-12r: 1.2rem;
   --border-16r: 1.6rem;
   --border-24r: 2.4rem;
+  --border-32r: 3.2rem;
+  --border-40r: 4rem;
   --border-128r: 12.8rem;
 }
 
@@ -174,10 +176,40 @@ footer {
 }
 .btn-four {
   color: var(--color-puple--500);
+  background-color: var(--color-white__def);
+  border: 0.2rem solid var(--color-puple--500);
   padding: 1.6rem 2.4rem;
   border-radius: var(--border-12r);
-  border: 0.2rem solid var(--color-puple--500);
 
+  &:hover {
+    color: var(--color-white__def);
+    background-color: var(--color-puple--500);
+
+    path {
+      fill: var(--color-white__def);
+    }
+  }
+
+  .btn-four__svg {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+.btn-five {
+  color: var(--color-white__def);
+  background-color: var(--color-puple--500);
+  padding: 1.6rem 2.4rem;
+  border-radius: var(--border-12r);
+
+  &:hover {
+    color: var(--color-puple--500);
+    background-color: var(--color-white__def);
+    border: 0.2rem solid var(--color-puple--500);
+
+    path {
+      fill: var(--color-puple--500);
+    }
+  }
   .btn-four__svg {
     width: 2.8rem;
     height: 2.8rem;

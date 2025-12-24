@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (activeTab) {
       activeTab.classList.add('active');
     }
+
+    
     
     // Определяем какой блок показывать
     let targetBlockId = 'block-tarifs__one';

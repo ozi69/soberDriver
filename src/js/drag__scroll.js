@@ -7,6 +7,8 @@ class DragScroll {
     
     this.init();
   }
+
+  // если в консоли возникает ошибка, то она связана с ненахожденим контейнар в котором проихсодит свайп
   
   init() {
     this.container.addEventListener('mousedown', this.onMouseDown.bind(this));
