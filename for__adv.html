@@ -29,7 +29,7 @@
             ТРЕЗВЫЙ ВОДИТЕЛЬ
           </a>
     
-          <button class="header-btn__location">
+          <button class="header-btn__location" id="openModal">
             <div class="header-btn__location-img">
               <img src="src/img/location.svg" alt="">
             </div>
@@ -572,6 +572,56 @@
     </footer>
   </div>
 
+
+  <div class="modal" id="modal">
+    <div class="modal-container">
+      <button class="modal-close" id="closeModal">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.5">
+            <mask id="mask0_31_6781" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_31_6781)">
+              <path d="M6.39953 18.6553L5.3457 17.6015L10.9457 12.0015L5.3457 6.40148L6.39953 5.34766L11.9995 10.9477L17.5995 5.34766L18.6534 6.40148L13.0534 12.0015L18.6534 17.6015L17.5995 18.6553L11.9995 13.0553L6.39953 18.6553Z" fill="#18181B"/>
+            </g>
+          </g>
+        </svg>
+      </button>
+
+      <h3 class="modal-title">
+        Выберите ваш город
+      </h3>
+
+      <div class="modaal-head">
+        <input type="search" class="find-city" placeholder="Ваш город">
+
+        <p class="modal-text">
+          Текущий город:
+          <span class="selected-city">
+            <span class="selected-city__img">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1654_36115)">
+                  <path d="M13.7467 5.63464C13.0467 2.55464 10.3601 1.16797 8.00006 1.16797C8.00006 1.16797 8.00006 1.16797 7.9934 1.16797C5.64006 1.16797 2.94673 2.54797 2.24673 5.62797C1.46673 9.06797 3.5734 11.9813 5.48006 13.8146C6.18673 14.4946 7.0934 14.8346 8.00006 14.8346C8.90673 14.8346 9.8134 14.4946 10.5134 13.8146C12.4201 11.9813 14.5267 9.07464 13.7467 5.63464ZM8.00006 8.97464C6.84006 8.97464 5.90006 8.03464 5.90006 6.87464C5.90006 5.71464 6.84006 4.77464 8.00006 4.77464C9.16006 4.77464 10.1001 5.71464 10.1001 6.87464C10.1001 8.03464 9.16006 8.97464 8.00006 8.97464Z" fill="#7C60F5"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1654_36115">
+                    <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span id="currentCity">Москва</span>
+          </span>
+        </p>
+      </div>
+
+      <div class="modal__list-city" id="citiesList">
+        <!-- Города будут добавлены через JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="src/js/selected__city.js"></script>
   <script src="src/js/burger.js"></script>
   <script src="src/js/swiper.js"></script>
   

@@ -20,6 +20,14 @@
   line-height: 2.4rem;
 
   color: var(--color-black__def-1000);
+  transition: 0.3s ease;
+
+  &:hover {
+    color: var(--color-puple--alt);
+  }
+  &:active {
+    color: var(--color-puple--600);
+  }
 }
 .header-logo__img {
   display: flex;
@@ -40,9 +48,17 @@
   line-height: 1.6rem;
 
   color: var(--color-black__def-1000);
+  transition: 0.3s ease;
 
   @media (max-width: 767px) {
     display: none;
+  }
+
+  &:hover {
+    color: var(--color-puple--alt);
+  }
+  &:active {
+    color: var(--color-puple--600);
   }
 }
 .header-btn__location-img {
@@ -69,6 +85,8 @@
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2rem;
+
+  transition: all 0.3s ease;
 }
 
 .header-item__link:hover {

@@ -2,6 +2,7 @@
 @import url(./fonts.css);
 @import url(./src/section_style/header.css);
 @import url(./src/section_style/footer.css);
+@import url(./src/section_style/aside.css);
 
 /* секции */
 @import url(./src/section_style/section__advantages.css);
@@ -20,13 +21,15 @@
 @import url(./src/section_style/section__blog.css);
 @import url(./src/section_style/section__img-back.css);
 @import url(./src/section_style/section__news.css);
-@import url(./src/section_style/aside.css);
 @import url(./src/section_style/section__about.css);
 @import url(./src/section_style/section__services.css);
 @import url(./src/section_style/section__tarifs.css);
 @import url(./src/section_style/section__mobile.css);
 @import url(./src/section_style/section__rewiews.css);
 @import url(./src/section_style/section__contacts.css);
+
+/* modal */
+@import url(./src/section_style/modal__select-city.css);
 
 /* цвета */
 
@@ -159,12 +162,51 @@ footer {
   border-radius: var(--border-6r);
   border: 0.1rem solid var(--color-puple--500);
   background-color: var(--color-white__def);
+
+  transition: 0.3s ease;
+
+  /* Hover эффект */
+  &:hover {
+    color: var(--color-white__def);
+    background-color: var(--color-puple--500);
+    border-color: var(--color-puple--500);
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 1.2rem rgba(124, 97, 245, 0.25);
+  }
+
+  /* Active эффект */
+  &:active {
+    color: var(--color-white__def);
+    background-color: var(--color-puple--600);
+    border-color: var(--color-puple--600);
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.6rem rgba(124, 97, 245, 0.15);
+  }
 }
 .btn-second {
   color: var(--color-white__def);
   padding: 1rem 1.6rem;
   border-radius: var(--border-6r);
   background-color: var(--color-puple--500);
+
+  transition: 0.3s ease;
+
+  /* Hover эффект */
+  &:hover {
+    color: var(--color-white__def);
+    background-color: var(--color-puple--alt);
+    border-color: var(--color-puple--alt);
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 1.2rem rgba(124, 97, 245, 0.35);
+  }
+
+  /* Active эффект */
+  &:active {
+    background-color: var(--color-puple--600);
+    border-color: var(--color-puple--600);
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.6rem rgba(124, 97, 245, 0.2);
+  }
 }
 .btn-third {
   color: var(--color-white__def);
@@ -173,6 +215,24 @@ footer {
   background-color: var(--color-puple--500);
 
   box-shadow: 0 0 1.6rem 0 #7c60f540;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    color: var(--color-white__def);
+    background-color: var(--color-puple--alt);
+    border-color: var(--color-puple--alt);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.6rem 2rem rgba(124, 97, 245, 0.4);
+  }
+
+  /* Active эффект */
+  &:active {
+    background-color: var(--color-puple--600);
+    border-color: var(--color-puple--600);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.3rem 1rem rgba(124, 97, 245, 0.3);
+  }
 }
 .btn-four {
   color: var(--color-puple--500);
@@ -181,13 +241,32 @@ footer {
   padding: 1.6rem 2.4rem;
   border-radius: var(--border-12r);
 
+  transition: 0.3s ease;
+
+  /* Hover эффект */
   &:hover {
     color: var(--color-white__def);
     background-color: var(--color-puple--500);
+    border-color: var(--color-puple--500);
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 1.5rem rgba(124, 97, 245, 0.3);
 
     path {
       fill: var(--color-white__def);
     }
+
+    .btn-four__svg {
+      transform: translateX(0.4rem);
+    }
+  }
+
+  /* Active эффект */
+  &:active {
+    color: var(--color-white__def);
+    background-color: var(--color-puple--600);
+    border-color: var(--color-puple--600);
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.8rem rgba(124, 97, 245, 0.2);
   }
 
   .btn-four__svg {
@@ -201,14 +280,32 @@ footer {
   padding: 1.6rem 2.4rem;
   border-radius: var(--border-12r);
 
+  transition: 0.3s ease;
+
+  /* Hover эффект */
   &:hover {
     color: var(--color-puple--500);
     background-color: var(--color-white__def);
-    border: 0.2rem solid var(--color-puple--500);
+    border-color: var(--color-puple--500);
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 1.5rem rgba(124, 97, 245, 0.3);
 
     path {
       fill: var(--color-puple--500);
     }
+
+    .btn-four__svg {
+      transform: translateX(0.4rem);
+    }
+  }
+
+  /* Active эффект */
+  &:active {
+    color: var(--color-puple--600);
+    background-color: var(--color-gray--200);
+    border-color: var(--color-puple--600);
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 0.8rem rgba(124, 97, 245, 0.2);
   }
   .btn-four__svg {
     width: 2.8rem;
@@ -222,10 +319,31 @@ footer {
   border-radius: var(--border-12r);
   padding: 1.4rem 2rem;
   color: var(--color-white__def);
+  transition: 0.3s ease;
 
   display: flex;
   align-items: center;
   gap: 1.2rem;
+
+  /* Hover эффект */
+  &:hover {
+    background-color: #0095e6;
+    border-color: #0095e6;
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 2rem rgba(0, 161, 255, 0.35);
+
+    .tg-link__svg {
+      transform: scale(1.1);
+    }
+  }
+
+  /* Active эффект */
+  &:active {
+    background-color: #0088cc;
+    border-color: #0088cc;
+    transform: translateY(0);
+    box-shadow: 0 0.2rem 1rem rgba(0, 161, 255, 0.25);
+  }
 
   @media (max-width: 767px) {
     gap: 0.5rem;
@@ -234,6 +352,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: 0.3s ease;
 
     svg {
       width: 2.8rem;

@@ -85,6 +85,8 @@
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.6rem;
+
+  transition: all 0.3s ease;
 }
 .foo-nav__item-link:hover {
   color: var(--color-white__def);
@@ -118,6 +120,8 @@
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.6rem;
+
+  transition: all 0.3s ease;
 }
 .foo-nav__dop-link:hover {
   color: var(--color-white__def);
