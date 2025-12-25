@@ -76,12 +76,13 @@
   flex-direction: column;
 
   margin: 0 auto;
-  max-width: 1920px;
 }
 
 ._container {
   padding: 8rem 7.2rem;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding: 4rem 2rem;
@@ -90,6 +91,8 @@
 ._container-alt {
   padding: 4.8rem 7.2rem;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding: 4rem 2rem;
@@ -98,6 +101,8 @@
 ._container-alt2 {
   padding: 8rem 0;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding: 4rem 0;
@@ -106,6 +111,8 @@
 ._container-alt3 {
   padding: 0 7.2rem;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding: 0 2rem;
@@ -114,6 +121,8 @@
 ._container-alt4 {
   padding: 6.4rem 7.2rem 0;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding: 4rem 2rem 0;
@@ -122,6 +131,8 @@
 ._container-alt5 {
   padding: 4rem 7.2rem 6.4rem;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     padding: 4rem 2rem;
@@ -129,6 +140,8 @@
 }
 ._container-page {
   display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -143,11 +156,21 @@ header {
   @media (max-width: 767px) {
     padding: 1.6rem 2rem;
   }
+
+  .header {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
 
 footer {
   background-color: var(--color-black__def-1000);
   padding: 6.4rem 7.2rem;
+
+  .footer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 
   @media (max-width: 767px) {
     padding: 4rem 2rem 2rem;
