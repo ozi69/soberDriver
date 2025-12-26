@@ -20,7 +20,9 @@
   <div class="wrapper">
     <!-- header -->
     <header>
-      <div class="header">
+      <div class="header animate-on-scroll" 
+      data-animate="fade-down--header"
+      >
         <div class="header-blcok__info">
           <a href="index.html" class="header-logo">
             <div class="header-logo__img">
@@ -149,7 +151,7 @@
         <div class="_container">
           <div class="container-hero__alt">
             <div class="container-hero__content">
-              <p class="hero-content_info-text">
+              <p class="hero-content_info-text animate-on-scroll" data-animate="fade-scale">
                 <span class="hero-content_info-marker">
 
                 </span>
@@ -160,7 +162,8 @@
               </p>
 
               <div class="hero-content__head">
-                <h1 class="hero-content__head-title">
+                <h1 class="hero-content__head-title animate-on-scroll" data-animate="fade-left"                
+                >
                   ТРЕЗВЫЙ ВОДИТЕЛЬ <br>
                   <span>
                     ПО
@@ -171,7 +174,9 @@
                   </span>
                 </h1>
 
-                <div class="hero-content__list">
+                <div class="hero-content__list animate-on-scroll"
+                  data-animate="fade-right"
+                  data-animate-parent-delay="500,+300">
                   <div class="hero-content__list-item">
                     <div class="hero-content__list-marker">
                       <img src="src/img/check_small.svg" alt="">
@@ -193,7 +198,9 @@
                 </div>
               </div>
 
-              <div class="block-hero__link">
+              <div class="block-hero__link animate-on-scroll"
+              data-animate-parent-delay="400,+300"
+              data-animate="fade-scale">
                 <a href="" class="block-hero__link-item">
                   <img src="src/img/hero__app-store.svg" alt="">
                 </a>
@@ -206,7 +213,10 @@
               </div>
             </div>
 
-            <div class="container-hero__swiper">
+            <!-- swiper -->
+            <div class="container-hero__swiper animate-on-scroll"
+            data-animate="fade-right"
+            >
               <!-- Slider main container -->
               <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -268,21 +278,32 @@
       <section class="section-advantages">
       <div class="_container">
         <div class="section-head">
-          <span class="hgroup-head__up">
+          <span class="hgroup-head__up animate-on-scroll"
+          data-animate="fade-top"
+          data-animate-delay="400"
+          >
             Тысячи клиентов доверяют нам
           </span>
 
           <hgroup class="hgroup-head">
-            <h2 class="hgroup-head__title">
+            <h2 class="hgroup-head__title animate-on-scroll"
+            data-animate="fade-top"
+            >
               ПОЧЕМУ ВЫБИРАЮТ НАС
             </h2>
-            <p class="hgroup-head__text">
+            <p class="hgroup-head__text animate-on-scroll"
+            data-animate="fade-top"
+            data-animate-delay="200"
+            >
               Работаем круглосуточно, подаём машину быстро и <br> фиксируем маршрут в приложении
             </p>
           </hgroup>
         </div>
 
-        <div class="container-def container-grid">
+        <div class="container-def container-grid animate-on-scroll"
+        data-animate="fade-right"
+        data-animate-parent-delay="100,+150"
+        >
           <div class="card">
             <div class="card-img">
               <img src="src/img/img__1.png" alt="">
@@ -1116,5 +1137,6 @@
   <script src="src/js/counter__people.js"></script>
   <script src="src/js/swiper.js"></script>
   <script src="src/js/selected__city.js"></script>
+  <script src="src/js/animate__all-page.js"></script>
 </body>
 </html>

@@ -61,7 +61,71 @@
   --border-32r: 3.2rem;
   --border-40r: 4rem;
   --border-128r: 12.8rem;
+
+  /* animate */
+
+  --animate-duration: 0.6s;
+  --animate-duration_1s: 1s;
+
+  --translate-50pro: 50%;
+  --translate-150pro: 10rem;
+  --translate-50proMinus: -50%;
 }
+
+.animate-on-scroll {
+  opacity: 0;
+}
+
+/* Класс, который добавляется при видимости элемента */
+.animate-on-scroll.animated {
+  opacity: 1;
+}
+
+/*  */
+/*  */
+/*  */
+
+[data-animate="fade-top"] {
+  transform: translateY(var(--translate-150pro));
+}
+[data-animate="fade-top"].animated {
+  transition: var(--animate-duration);
+  transform: translateY(0);
+}
+/*  */
+[data-animate="fade-left"] {
+  transform: translateX(var(--translate-50proMinus));
+}
+[data-animate="fade-left"].animated {
+  transition: var(--animate-duration);
+  transform: translateX(0);
+}
+/*  */
+[data-animate="fade-right"] {
+  transform: translateX(var(--translate-50pro));
+}
+[data-animate="fade-right"].animated {
+  transition: var(--animate-duration);
+  transform: translateX(0);
+}
+/*  */
+[data-animate="fade-down--header"] {
+  
+}
+
+[data-animate="fade-down--header"].animated {
+  transition: var(--animate-duration_1s);
+}
+/*  */
+[data-animate="fade-scale"] {
+  transform: scale(0.5);
+}
+
+[data-animate="fade-scale"].animated {
+  transition: var(--animate-duration);
+  transform: scale(1);
+}
+/*  */
 
 /* настройка страницы */
 

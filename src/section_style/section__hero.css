@@ -105,6 +105,8 @@
   color: var(--color-puple--500);
 }
 .hero-content__list {
+  overflow: hidden;
+  
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -210,6 +212,7 @@
     width: 30rem;
   }
 }
+
 .swiper {
 }
 .swiper-wrapper {

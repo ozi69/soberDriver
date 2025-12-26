@@ -147,7 +147,7 @@
 
 .burger-menu.active {
   visibility: visible;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .burger-menu__overlay {
@@ -170,6 +170,7 @@
   top: 0;
   right: 0;
   width: 30rem;
+
   height: 100%;
   background-color: var(--color-white__def);
   padding: 5rem 2rem 4rem;
