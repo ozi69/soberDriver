@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Блог</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
 
   <!-- SEO-Parameters -->
   <meta name="keywords" content="ключевые слова">
@@ -18,7 +18,9 @@
   <div class="wrapper">
     <!-- header -->
     <header>
-      <div class="header">
+      <div class="header animate-on-scroll" 
+      data-animate="fade-down--header"
+      >
         <div class="header-blcok__info">
           <a href="index.html" class="header-logo">
             <div class="header-logo__img">
@@ -145,7 +147,10 @@
       <!-- section-hi -->
       <section class="section-hi">
       <div class="_container-alt4">
-        <hgroup class="container-hi">
+        <hgroup class="container-hi animate-on-scroll"
+            data-animate="fade-left"
+            data-animate-parent-delay="0,+350"
+            >
           <h2 class="container-hi__title">
             Блог Трезвого Водителя
           </h2>
@@ -159,7 +164,10 @@
       <!-- section-blog -->
       <section class="section-blog">
         <div class="_container">
-          <div class="container-blog">
+          <div class="container-blog animate-on-scroll"
+            data-animate="fade-right"
+            data-animate-parent-delay="0,+200"
+            >
             <div class="card-blog">
               <div class="card-blog__img">
                 <img src="src/img/blog__img.png" alt="">
@@ -387,7 +395,9 @@
             </div>
           </div>
 
-          <button class="btn-second blog-btn">
+          <button class="btn-second blog-btn animate-on-scroll"
+            data-animate="fade-top"
+            >
             Показать больше
           </button>
         </div>
@@ -400,10 +410,15 @@
         </div>
         <div class="_container-alt">
           <div class="container-app">
-            <div class="conatiner-app__logo">
+            <div class="conatiner-app__logo animate-on-scroll"
+            data-animate="fade-top"
+            >
               <img src="src/img/block__logo.svg" alt="">
             </div>
-            <hgroup class="container-app__hgroup">
+            <hgroup class="container-app__hgroup animate-on-scroll"
+            data-animate="fade-top"
+            data-animate-parent-delay="0,+300"
+            >
               <h3 class="app-hgroup__title">
                 Скачайте приложение Трезвый Водитель
               </h3>
@@ -411,7 +426,10 @@
                 Вызовите водителя за пару секунд без звонков и ожидания
               </p>
             </hgroup>
-            <div class="container-app_links">
+            <div class="container-app_links animate-on-scroll"
+            data-animate="fade-scale"
+            data-animate-parent-delay="0,+500"
+            >
               <a href="" class="app-links__item">
                 <img src="src/img/block__app-store.svg" alt="">
               </a>
@@ -426,12 +444,15 @@
         </div>
       </section>
 
+
       <!-- section-tg -->
       <section class="section-tg">
         <div class="_container-alt3">
           <div class="container-tg">
             <div class="container-tg__content">
-              <h2 class="tg-content__title">
+              <h2 class="tg-content__title animate-on-scroll"
+              data-animate="fade-left-2"
+              >
                 Безопасные поездки только у нас: <br>
                 <span>
                   полезные советы, акции и бонусы <br>
@@ -439,7 +460,9 @@
                 в одном канале
               </h2>
 
-              <a href="" class="container-tg__link btn-tg">
+              <a href="" class="container-tg__link btn-tg animate-on-scroll"
+              data-animate="fade-top"
+              >
                 <span class="tg-link__svg">
                   <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M-8.16602 30.041C-8.16602 34.0681 -4.9011 37.333 -0.874023 37.333H-1.16602C-5.03186 37.3328 -8.16602 34.1989 -8.16602 30.333V30.041ZM38.501 30.333C38.501 34.199 35.367 37.333 31.501 37.333H31.209C35.2361 37.333 38.501 34.0681 38.501 30.041V30.333ZM24.1914 5.25C24.3691 5.24704 24.7661 5.29131 25.0234 5.5C25.2408 5.67638 25.3015 5.91481 25.3301 6.08203C25.3587 6.24942 25.3935 6.63027 25.3652 6.92773C25.0419 10.3252 23.6434 18.5699 22.9316 22.375C22.6304 23.9848 22.037 24.5243 21.4629 24.5771C20.475 24.668 19.6752 24.0984 18.7852 23.4639C18.5513 23.2971 18.311 23.1257 18.0596 22.9609C17.0724 22.3139 16.3089 21.7943 15.5439 21.2734C14.8437 20.7965 14.1418 20.3183 13.2646 19.7402C11.4389 18.5371 12.2035 17.7999 13.2227 16.8174C13.3875 16.6584 13.5592 16.4932 13.7275 16.3184C13.8027 16.2403 14.1701 15.898 14.6885 15.416C16.3518 13.8696 19.5663 10.881 19.6475 10.5352C19.6607 10.4781 19.6733 10.2668 19.5479 10.1553C19.4222 10.0436 19.2363 10.0819 19.1025 10.1123C18.9117 10.1562 15.8909 12.1531 10.04 16.1025C9.18257 16.6913 8.40583 16.9779 7.70996 16.9629C6.94282 16.9463 5.46713 16.5294 4.37012 16.1729C4.20908 16.1205 4.052 16.0711 3.90039 16.0234C2.78553 15.6729 1.96617 15.4154 2.04785 14.7617C2.09635 14.3748 2.62945 13.9787 3.64648 13.5742C9.90997 10.8453 14.087 9.04597 16.1768 8.17676C22.1432 5.69509 23.3833 5.26439 24.1914 5.25ZM-0.874023 -9.33398C-4.90105 -9.33398 -8.16594 -6.069 -8.16602 -2.04199V-2.33398C-8.16576 -6.19965 -5.03171 -9.33382 -1.16602 -9.33398H-0.874023ZM31.501 -9.33398C35.3668 -9.33397 38.5007 -6.19975 38.501 -2.33398V-2.04199C38.5009 -6.069 35.236 -9.33398 31.209 -9.33398H31.501Z" fill="white"/>
@@ -458,7 +481,165 @@
       </section>
     </main>
   
+    <!-- footer -->
     <footer>
+      <div class="footer">
+        <div class="footer-block__one animate-on-scroll"
+        data-animate="fade-left-2"
+        >
+          <div class="footer-logo">
+            <div class="footer-logo__img">
+              <img src="src/img/Logo.svg" alt="">
+            </div>
+            ТРЕЗВЫЙ <br>
+            ВОДИТЕЛЬ
+          </div>
+
+          <div class="block-one__content">
+            <p>
+              ©2021-2026
+            </p>
+            <p>
+              ООО «ВодительДА»
+            </p>
+            <p>
+              ОГРН 1147746136713
+            </p>
+            <p>
+              ИНН 7731465565
+            </p>
+            <p>
+              КПП 773101001
+            </p>
+          </div>
+
+          <div class="footer-social__icon">
+            <a href="">
+              <img src="src/img/tg.svg" alt="">
+            </a>
+            <a href="">
+              <img src="src/img/vk.svg" alt="">
+            </a>
+            <a href="">
+              <img src="src/img/what.svg" alt="">
+            </a>
+            <a href="">
+              <img src="src/img/youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-block__two animate-on-scroll"
+        data-animate="fade-top"
+        >
+          <nav class="foo-nav">
+            <div class="foo-nav__box">
+              <ul class="foo-nav__list">
+                <li class="foo-nav__list-item">
+                  <a href="about.html" class="foo-nav__item-link">
+                    О компании
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="services.html" class="foo-nav__item-link">
+                    Услуги
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="tarifs.html" class="foo-nav__item-link">
+                    Тарифы
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="blog.html" class="foo-nav__item-link">
+                    Блог
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="for__adv.html" class="foo-nav__item-link">
+                    Для рекламодателей
+                  </a>
+                </li>
+              </ul>
+
+              <div class="foo-nav__dop">
+                <h2 class="foo-nav__dop-title">
+                  Документы
+                </h2>
+                <ul class="foo-nav__dop-list">
+                  <li class="foo-nav__dop-item">
+                    <a href="" class="foo-nav__dop-link">
+                      Политика конфиденциальности
+                    </a>
+                  </li>
+                  <li class="foo-nav__dop-item">
+                    <a href="" class="foo-nav__dop-link">
+                      Пользовательское соглашение
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+             <div class="foo-nav__box">
+              <ul class="foo-nav__list">
+                <li class="foo-nav__list-item">
+                  <a href="" class="foo-nav__item-link">
+                    Стать трезвым водителем
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="" class="foo-nav__item-link">
+                    Вопросы/Ответы
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="reviews.html" class="foo-nav__item-link">
+                    Отзывы клиентов
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="contact.html" class="foo-nav__item-link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+
+              <div class="foo-nav__dop">
+                <h2 class="foo-nav__dop-title">
+                  График работы
+                </h2>
+                <ul class="foo-nav__dop-list">
+                  <li class="foo-nav__dop-item">
+                    <a href="" class="foo-nav__dop-link">
+                      Сервис трезвого водителя доступен <br>круглосуточно!
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <p class="text-stars">
+            *App Store является товарным знаком Apple Inc. <br>
+            **Google Play и логотип Google Play являются товарными знаками корпорации Google LLC.
+          </p>
+        </div>
+
+        <div class="footer-block__three animate-on-scroll"
+        data-animate="fade-scale"
+        data-animate-delay="300"
+        >
+          <a href="" class="footer-block__dowload">
+            <img src="src/img/footer__app-store.svg" alt="">
+          </a>
+          <a href="" class="footer-block__dowload">
+            <img src="src/img/footer__google-play.svg" alt="">
+          </a>
+          <a href="" class="footer-block__dowload">
+            <img src="src/img/footer__ruStore.svg" alt="">
+          </a>
+        </div>
+      </div>
     </footer>
   </div>
 
@@ -513,5 +694,6 @@
   <script src="src/js/selected__city.js"></script>
   <script src="src/js/burger.js"></script>
   <script src="src/js/btn-blog.js"></script>
+  <script src="src/js/animate__all-page.js"></script>
 </body>
 </html>

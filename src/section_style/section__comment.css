@@ -12,6 +12,7 @@
   align-items: center;
   gap: 3.2rem;
 
+  user-select: none;
   min-width: 41.6rem;
   height: 37.6rem;
   padding: 3.2rem;

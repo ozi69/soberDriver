@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Услуги</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
 
   <!-- SEO-Parameters -->
   <meta name="keywords" content="ключевые слова">
@@ -18,7 +18,9 @@
   <div class="wrapper">
     <!-- header -->
     <header>
-      <div class="header">
+      <div class="header animate-on-scroll" 
+      data-animate="fade-down--header"
+      >
         <div class="header-blcok__info">
           <a href="index.html" class="header-logo">
             <div class="header-logo__img">
@@ -146,14 +148,19 @@
         <div class="_container-page">
           <!-- aside -->
           <aside class="aside">
-            <div class="aside-back">
+            <div class="aside-back animate-on-scroll"
+            data-animate="fade-scale"
+            >
               <a href="index.html" class="aside-back__link">Главная</a>
               /
               <p class="aside-back__text">Услуги</p>
             </div>
     
             <nav class="aside-nav">
-              <ul class="aside-nav__list">
+              <ul class="aside-nav__list  animate-on-scroll"
+              data-animate="fade-right"
+              data-animate-parent-delay="200,+200"
+              >
                 <li>
                   <a href="about.html" class="aside-nav__list-item">
                     О компании
@@ -191,11 +198,16 @@
           <!-- section-about copy-->
           <section class="section-about">
             <div class="container-about">
-              <h2 class="container-about__title">
+              <h2 class="container-about__title  animate-on-scroll"
+              data-animate="fade-right"
+              >
                 Услуги
               </h2>
   
-              <div class="container-about__block">
+              <div class="container-about__block  animate-on-scroll"
+              data-animate="fade-top"
+              data-animate-parent-delay="200"
+              >
                 <p class="container-about__block-text">
                   На сегодняшний день государство активно ведет работу по ужесточению за управление транспортом в состоянии алкогольного опьянения, проводя рейдовые мероприятия на дорогах и внесения изменения в законодательную базу нормы ответственности. Эта работа вызвана прежде всего, выявить нарушителей, существенно сократить дорожно-транспортные происшествия, в тч с летальными исходами.
                 </p>
@@ -212,7 +224,10 @@
               </div>
   
               <!-- section-driver-services -->
-              <section class="driver-services">
+              <section class="driver-services  animate-on-scroll"
+              data-animate="fade-right"
+              data-animate-parent-delay="150,+150"
+              >
                 <div class="card-services">
                   <hgroup class="card-services__hgroup">
                     <h5 class="card-services__hgroup-title">
@@ -265,7 +280,165 @@
       </div>
     </main>
   
+    <!-- footer -->
     <footer>
+      <div class="footer">
+        <div class="footer-block__one animate-on-scroll"
+        data-animate="fade-left-2"
+        >
+          <div class="footer-logo">
+            <div class="footer-logo__img">
+              <img src="src/img/Logo.svg" alt="">
+            </div>
+            ТРЕЗВЫЙ <br>
+            ВОДИТЕЛЬ
+          </div>
+
+          <div class="block-one__content">
+            <p>
+              ©2021-2026
+            </p>
+            <p>
+              ООО «ВодительДА»
+            </p>
+            <p>
+              ОГРН 1147746136713
+            </p>
+            <p>
+              ИНН 7731465565
+            </p>
+            <p>
+              КПП 773101001
+            </p>
+          </div>
+
+          <div class="footer-social__icon">
+            <a href="">
+              <img src="src/img/tg.svg" alt="">
+            </a>
+            <a href="">
+              <img src="src/img/vk.svg" alt="">
+            </a>
+            <a href="">
+              <img src="src/img/what.svg" alt="">
+            </a>
+            <a href="">
+              <img src="src/img/youtube.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-block__two animate-on-scroll"
+        data-animate="fade-top"
+        >
+          <nav class="foo-nav">
+            <div class="foo-nav__box">
+              <ul class="foo-nav__list">
+                <li class="foo-nav__list-item">
+                  <a href="about.html" class="foo-nav__item-link">
+                    О компании
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="services.html" class="foo-nav__item-link">
+                    Услуги
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="tarifs.html" class="foo-nav__item-link">
+                    Тарифы
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="blog.html" class="foo-nav__item-link">
+                    Блог
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="for__adv.html" class="foo-nav__item-link">
+                    Для рекламодателей
+                  </a>
+                </li>
+              </ul>
+
+              <div class="foo-nav__dop">
+                <h2 class="foo-nav__dop-title">
+                  Документы
+                </h2>
+                <ul class="foo-nav__dop-list">
+                  <li class="foo-nav__dop-item">
+                    <a href="" class="foo-nav__dop-link">
+                      Политика конфиденциальности
+                    </a>
+                  </li>
+                  <li class="foo-nav__dop-item">
+                    <a href="" class="foo-nav__dop-link">
+                      Пользовательское соглашение
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+             <div class="foo-nav__box">
+              <ul class="foo-nav__list">
+                <li class="foo-nav__list-item">
+                  <a href="" class="foo-nav__item-link">
+                    Стать трезвым водителем
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="" class="foo-nav__item-link">
+                    Вопросы/Ответы
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="reviews.html" class="foo-nav__item-link">
+                    Отзывы клиентов
+                  </a>
+                </li>
+                <li class="foo-nav__list-item">
+                  <a href="contact.html" class="foo-nav__item-link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+
+              <div class="foo-nav__dop">
+                <h2 class="foo-nav__dop-title">
+                  График работы
+                </h2>
+                <ul class="foo-nav__dop-list">
+                  <li class="foo-nav__dop-item">
+                    <a href="" class="foo-nav__dop-link">
+                      Сервис трезвого водителя доступен <br>круглосуточно!
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <p class="text-stars">
+            *App Store является товарным знаком Apple Inc. <br>
+            **Google Play и логотип Google Play являются товарными знаками корпорации Google LLC.
+          </p>
+        </div>
+
+        <div class="footer-block__three animate-on-scroll"
+        data-animate="fade-scale"
+        data-animate-delay="300"
+        >
+          <a href="" class="footer-block__dowload">
+            <img src="src/img/footer__app-store.svg" alt="">
+          </a>
+          <a href="" class="footer-block__dowload">
+            <img src="src/img/footer__google-play.svg" alt="">
+          </a>
+          <a href="" class="footer-block__dowload">
+            <img src="src/img/footer__ruStore.svg" alt="">
+          </a>
+        </div>
+      </div>
     </footer>
   </div>
 
@@ -320,5 +493,6 @@
 
   <script src="src/js/selected__city.js"></script>
   <script src="src/js/burger.js"></script>
+  <script src="src/js/animate__all-page.js"></script>
 </body>
 </html>

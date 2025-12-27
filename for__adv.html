@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Для продвинутых</title>
+  <title>Для рекламодателей</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -20,7 +20,9 @@
   <div class="wrapper">
     <!-- header -->
     <header>
-      <div class="header">
+      <div class="header animate-on-scroll" 
+      data-animate="fade-down--header"
+      >
         <div class="header-blcok__info">
           <a href="index.html" class="header-logo">
             <div class="header-logo__img">
@@ -149,23 +151,28 @@
         <div class="_container">
           <div class="container-hero__alt">
             <div class="container-hero__content">
-              <p class="hero-content_info-text">
+              <p class="hero-content_info-text animate-on-scroll"
+              data-animate="fade-scale"
+              >
                 <span class="hero-content_info-marker">
 
                 </span>
                 <span class="counter-people">
                   16 429
                 </span>
-                ЗАКАЗА ДОСТУПНО ПРЯМО СЕЙЧАС
+                КЛИЕНТОВ ПРЯМО СЕЙЧАС В ПРИЛОЖЕНИИ
               </p>
 
               <div class="hero-content__head">
-                <h1 class="hero-content__head-title">
+                <h1 class="hero-content__head-title animate-on-scroll" data-animate="fade-left"                
+                >
                   Разместите рекламу и <br>
                   получайте клиентов
                 </h1>
 
-                <div class="hero-content__list">
+                <div class="hero-content__list animate-on-scroll"
+                  data-animate="fade-right"
+                  data-animate-parent-delay="500,+300">
                   <div class="hero-content__list-item">
                     <div class="hero-content__list-marker">
                       <img src="src/img/check_small.svg" alt="">
@@ -187,7 +194,9 @@
                 </div>
               </div>
 
-              <a href="" class="btn-five hero-btn">
+              <a href="" class="btn-five hero-btn animate-on-scroll"
+              data-animate-delay="400"
+              data-animate="fade-scale">
                 РАЗМЕСТИТЬ РЕКЛАМУ
                 <span class="btn-four__svg">
                   <svg  viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +211,9 @@
               </a>
             </div>
 
-            <div class="container-hero__swiper">
+            <div class="container-hero__swiper animate-on-scroll"
+            data-animate="fade-right"
+            >
               <!-- Slider main container -->
               <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -264,22 +275,33 @@
       <section class="section-advantages">
         <div class="_container">
           <div class="section-head">
-            <span class="hgroup-head__up">
+            <span class="hgroup-head__up animate-on-scroll"
+          data-animate="fade-top"
+          data-animate-delay="400"
+          >
               когда садиться за руль нельзя
             </span>
   
             <hgroup class="hgroup-head">
-              <h2 class="hgroup-head__title">
+              <h2 class="hgroup-head__title animate-on-scroll"
+            data-animate="fade-top"
+            >
                 ВАШИ ПРЕИМУЩЕСТВА
               </h2>
-              <p class="hgroup-head__text">
-                Работаем круглосуточно, подаём машину быстро и <br>
-  фиксируем маршрут в приложении
+              <p class="hgroup-head__text animate-on-scroll"
+            data-animate="fade-top"
+            data-animate-delay="200"
+            >
+                Работаем круглосуточно, подаём машину быстро и 
+                фиксируем маршрут в приложении
               </p>
             </hgroup>
           </div>
   
-          <div class="container-def container-grid">
+          <div class="container-def container-grid animate-on-scroll"
+        data-animate="fade-right"
+        data-animate-parent-delay="100,+150"
+        >
             <div class="card">
               <div class="card-img">
                 <img src="src/img/img__1.png" alt="">
@@ -374,10 +396,15 @@
         <div class="_container ">
           <div class="core-advertiser">
             <div class="container-advertiser">
-              <h2 class="container-advertiser__title">
+              <h2 class="container-advertiser__title animate-on-scroll"
+              data-animate="fade-top"
+              >
                 Стать рекламодателем
               </h2>
-              <form action="" method="post" class="form-def" id="form-def">
+              <form action="" method="post" class="form-def animate-on-scroll" id="form-def"
+              data-animate="fade-right"
+              data-animate-parent-delay="300,+350"
+              >
                 <div class="form-box">
                   <label class="label-def" for="tel">
                     Контактные данные
@@ -403,7 +430,9 @@
                   <textarea name="comment" id="comment" class="textarea-def" placeholder="Требуется профильная реклама для повышения количество заявок в нашем сервисе..."></textarea>
                 </div>
               </form>
-              <button class="btn-second form-btn" form="form-def">
+              <button class="btn-second form-btn animate-on-scroll" form="form-def"
+              data-animate="fade-top"
+              >
                 Оставить заявку
               </button>
             </div>
@@ -415,7 +444,9 @@
     <!-- footer -->
     <footer>
       <div class="footer">
-        <div class="footer-block__one">
+        <div class="footer-block__one animate-on-scroll"
+        data-animate="fade-left-2"
+        >
           <div class="footer-logo">
             <div class="footer-logo__img">
               <img src="src/img/Logo.svg" alt="">
@@ -423,7 +454,7 @@
             ТРЕЗВЫЙ <br>
             ВОДИТЕЛЬ
           </div>
-  
+
           <div class="block-one__content">
             <p>
               ©2021-2026
@@ -441,7 +472,7 @@
               КПП 773101001
             </p>
           </div>
-  
+
           <div class="footer-social__icon">
             <a href="">
               <img src="src/img/tg.svg" alt="">
@@ -457,38 +488,40 @@
             </a>
           </div>
         </div>
-  
-        <div class="footer-block__two">
+
+        <div class="footer-block__two animate-on-scroll"
+        data-animate="fade-top"
+        >
           <nav class="foo-nav">
             <div class="foo-nav__box">
               <ul class="foo-nav__list">
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
+                  <a href="about.html" class="foo-nav__item-link">
                     О компании
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
+                  <a href="services.html" class="foo-nav__item-link">
                     Услуги
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
+                  <a href="tarifs.html" class="foo-nav__item-link">
                     Тарифы
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
+                  <a href="blog.html" class="foo-nav__item-link">
                     Блог
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
+                  <a href="for__adv.html" class="foo-nav__item-link">
                     Для рекламодателей
                   </a>
                 </li>
               </ul>
-  
+
               <div class="foo-nav__dop">
                 <h2 class="foo-nav__dop-title">
                   Документы
@@ -507,35 +540,30 @@
                 </ul>
               </div>
             </div>
-              <div class="foo-nav__box">
+             <div class="foo-nav__box">
               <ul class="foo-nav__list">
                 <li class="foo-nav__list-item">
                   <a href="" class="foo-nav__item-link">
-                    О компании
+                    Стать трезвым водителем
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
                   <a href="" class="foo-nav__item-link">
-                    Услуги
+                    Вопросы/Ответы
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
-                    Тарифы
+                  <a href="reviews.html" class="foo-nav__item-link">
+                    Отзывы клиентов
                   </a>
                 </li>
                 <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
-                    Блог
-                  </a>
-                </li>
-                <li class="foo-nav__list-item">
-                  <a href="" class="foo-nav__item-link">
-                    Для рекламодателей
+                  <a href="contact.html" class="foo-nav__item-link">
+                    Контакты
                   </a>
                 </li>
               </ul>
-  
+
               <div class="foo-nav__dop">
                 <h2 class="foo-nav__dop-title">
                   График работы
@@ -550,14 +578,17 @@
               </div>
             </div>
           </nav>
-  
+
           <p class="text-stars">
             *App Store является товарным знаком Apple Inc. <br>
             **Google Play и логотип Google Play являются товарными знаками корпорации Google LLC.
           </p>
         </div>
-  
-        <div class="footer-block__three">
+
+        <div class="footer-block__three animate-on-scroll"
+        data-animate="fade-scale"
+        data-animate-delay="300"
+        >
           <a href="" class="footer-block__dowload">
             <img src="src/img/footer__app-store.svg" alt="">
           </a>
@@ -624,6 +655,8 @@
   <script src="src/js/selected__city.js"></script>
   <script src="src/js/burger.js"></script>
   <script src="src/js/swiper.js"></script>
+  <script src="src/js/counter__people.js"></script>
+  <script src="src/js/animate__all-page.js"></script>
   
 </body>
 </html>

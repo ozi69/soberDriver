@@ -104,10 +104,11 @@
     right: 0;
 
     @media (max-width: 767px) {
-      position: unset;
+      position: relative;
       height: 35rem;
 
       width: unset;
+      bottom: -4rem;
     }
   }
 }
