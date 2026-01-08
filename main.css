@@ -223,15 +223,15 @@
 
 header {
   background-color: var(--color-white__def);
-  padding: 2.2rem 7.2rem;
-
-  @media (max-width: 767px) {
-    padding: 1.6rem 2rem;
-  }
 
   .header {
+    padding: 2.2rem 7.2rem;
     max-width: 1920px;
     margin: 0 auto;
+
+    @media (max-width: 767px) {
+      padding: 1.6rem 2rem;
+    }
   }
 }
 

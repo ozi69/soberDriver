@@ -658,6 +658,12 @@ class ScrollAnimator {
     this.init();
   }
 
+  // animate-on-scroll - добавление в класс активирует анимацию 
+  // data-animate - сама анимция
+  // data-animate-delay - задержка анимации
+  // data-animate-parent-delay - задержка анимции дочерняя
+  // data-animate-parent-delay - задержка анимции дочерняя
+
   init() {
     if (!this.animationElements.length) return;
     
@@ -665,6 +671,7 @@ class ScrollAnimator {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // знанчие при котором будет показывается анимации при видимости элемента
             const threshold = entry.target.dataset.animateThreshold || 0;
             const intersectionRatio = entry.intersectionRatio;
             
