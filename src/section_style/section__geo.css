@@ -1,7 +1,42 @@
 .section-geography {
   background-color: var(--color-black__def-1000);
 }
+.core-geo {
+  position: relative;
+}
+/* Градиент слева */
+.core-geo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20rem;
+  background: linear-gradient(
+    to right,
+    var(--color-black__def-1000) 0%,
+    transparent 100%
+  );
+  z-index: 2;
+  pointer-events: none; /* Чтобы можно было кликать сквозь градиент */
+}
 
+/* Градиент справа */
+.core-geo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 20rem;
+  background: linear-gradient(
+    to left,
+    var(--color-black__def-1000) 0%,
+    transparent 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
 .geo-head__title {
   font-family: Heading Now regular;
   letter-spacing: 0.1rem;
