@@ -39,6 +39,10 @@
   font-weight: 500;
   font-size: 2rem;
   line-height: 2.4rem;
+
+  @media (max-width: 767px) {
+    gap: 0.5rem;
+  }
 }
 .hero-content_info-marker {
   width: 0.7rem;
@@ -106,7 +110,7 @@
 }
 .hero-content__list {
   overflow: hidden;
-  
+
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
