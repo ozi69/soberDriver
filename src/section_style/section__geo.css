@@ -86,10 +86,12 @@
 
   user-select: none;
   min-width: 31rem;
+  width: 31rem;
   height: 40rem;
 
   @media (max-width: 767px) {
     width: 26rem;
+    min-width: 26rem;
     height: 34rem;
   }
 }
