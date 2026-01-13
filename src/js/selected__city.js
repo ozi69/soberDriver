@@ -180,11 +180,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 5. Сохраняем в localStorage
     localStorage.setItem('selectedCity', city);
-    
-    console.log('Город обновлен:', city);
-    console.log('Элементы обновлены:');
-    console.log('- citySelectedUser:', citySelectedUser ? 'найден' : 'не найден');
-    console.log('- sectionTarifsCity:', sectionTarifsCity ? 'найден' : 'не найден');
   }
 
   // Функция обновления кнопки в хедере
@@ -340,12 +335,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // Инициализация
   renderCities();
   initializePageCity();
-  
-  // Отладочная информация
-  console.log('Найденные элементы с городом:');
-  console.log('- city-selected__user:', citySelectedUser);
-  console.log('- section-tarifs__city:', sectionTarifsCity);
-  console.log('- header-btn__location:', headerCityElement);
-  console.log('- currentCity элемент:', currentCityElement);
-  console.log('Текущий город:', selectedCity);
 });

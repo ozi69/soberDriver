@@ -19,9 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (numberMatch) {
       staticNumber = parseInt(numberMatch[0], 10);
-      console.log(`${counterId}: Нашел число в тексте: "${textContent}" → ${staticNumber}`);
     } else {
-      console.warn(`${counterId}: Не удалось найти число в тексте: "${textContent}"`);
       return; // Если не нашли число - выходим
     }
     
@@ -41,8 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const maxValue = staticNumber + maxIncrease;
       
       currentNumber = Math.floor(Math.random() * (maxValue - minValue + 1)) + minValue;
-      
-      console.log(`${counterId}: Статическое=${staticNumber}, Диапазон=${minValue}-${maxValue}, Начальное=${currentNumber}`);
     } else {
       // Если нет валидного числа, не делаем ничего
       console.warn(`${counterId}: Невалидное статическое число: ${staticNumber}`);

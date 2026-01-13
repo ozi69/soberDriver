@@ -113,18 +113,13 @@
 }
 .foo-nav__dop-item {
 }
-.foo-nav__dop-link {
+.foo-nav__dop-text {
   color: var(--color-gray--alt);
 
   font-family: Inter;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.6rem;
-
-  transition: all 0.3s ease;
-}
-.foo-nav__dop-link:hover {
-  color: var(--color-white__def);
 }
 
 .text-stars {
