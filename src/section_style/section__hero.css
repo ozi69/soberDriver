@@ -42,10 +42,12 @@
 
   @media (max-width: 768px) {
     gap: 0.5rem;
+    font-size: 1.6rem;
   }
 }
 .hero-content_info-marker {
   width: 0.7rem;
+  min-width: 0.7rem;
   height: 0.7rem;
   background-color: var(--color-green);
   border-radius: 50%;
@@ -100,7 +102,7 @@
   text-transform: uppercase;
 
   @media (max-width: 767px) {
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 5rem;
     letter-spacing: -0.1rem;
   }
