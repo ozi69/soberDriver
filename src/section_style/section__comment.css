@@ -20,6 +20,10 @@
   );
   z-index: 2;
   pointer-events: none; /* Чтобы можно было кликать сквозь градиент */
+
+  @media (max-width: 767px) {
+    width: 5rem;
+  }
 }
 
 /* Градиент справа */
@@ -37,6 +41,10 @@
   );
   z-index: 2;
   pointer-events: none;
+
+  @media (max-width: 767px) {
+    width: 5rem;
+  }
 }
 .container-comments:active {
   cursor: grabbing;
@@ -55,9 +63,9 @@
   border: 0.1rem solid var(--color-gray--200);
   border-radius: var(--border-16r);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     padding: 2.4rem;
-    
+
     gap: 2.5rem;
 
     height: 32rem;
@@ -72,7 +80,7 @@
   border-radius: 50%;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 9rem;
     height: 9rem;
   }
@@ -92,7 +100,7 @@
 
   color: var(--color-puple--500);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 2.2rem;
   }
 }
@@ -110,7 +118,7 @@
 
   color: var(--color-black__def-1000);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 2.6rem;
   }
 }
@@ -129,7 +137,7 @@
   text-align: center;
   color: var(--color-black__def-1000);
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 1.8rem;
   }
 }

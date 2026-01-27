@@ -19,6 +19,10 @@
   );
   z-index: 2;
   pointer-events: none; /* Чтобы можно было кликать сквозь градиент */
+
+  @media (max-width: 767px) {
+    width: 5rem;
+  }
 }
 
 /* Градиент справа */
@@ -36,6 +40,10 @@
   );
   z-index: 2;
   pointer-events: none;
+
+  @media (max-width: 767px) {
+    width: 5rem;
+  }
 }
 .geo-head__title {
   font-family: Heading Now regular;
