@@ -130,7 +130,6 @@
   line-height: 2.8rem;
 
   display: flex;
-  align-items: center;
   gap: 0.5rem;
 
   @media (max-width: 767px) {
