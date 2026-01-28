@@ -64,8 +64,8 @@
 
   /* animate */
 
-  --animate-duration: 0.6s;
-  --animate-duration_1s: 1s;
+  --animate-duration: 1s;
+  --animate-duration_1s: 1.5s;
 
   --translate-50pro: 50%;
   --translate-10rem: 10rem;

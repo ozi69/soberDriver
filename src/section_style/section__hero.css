@@ -16,7 +16,7 @@
   justify-content: space-between;
 
   @media (max-width: 767px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3rem;
   }
 }

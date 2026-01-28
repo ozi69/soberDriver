@@ -79,7 +79,9 @@
   pointer-events: none;
   position: absolute;
   visibility: hidden;
-  transition: opacity 0.5s ease, height 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    height 0.5s ease;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -138,7 +140,7 @@
 }
 
 .block-tarifs.active .tarifs-box {
-  animation: slideInLeft 0.5s ease forwards;
+  animation: slideInLeft 1s ease forwards;
   animation-delay: calc(var(--order, 0) * 0.1s);
 }
 
@@ -153,27 +155,6 @@
   }
 }
 
-.tarifs-box:nth-child(1) {
-  --order: 1;
-}
-.tarifs-box:nth-child(2) {
-  --order: 2;
-}
-.tarifs-box:nth-child(3) {
-  --order: 3;
-}
-.tarifs-box:nth-child(4) {
-  --order: 4;
-}
-.tarifs-box:nth-child(5) {
-  --order: 5;
-}
-.tarifs-box:nth-child(6) {
-  --order: 6;
-}
-.tarifs-box:nth-child(7) {
-  --order: 7;
-}
 /* КОНЕЦ  */
 
 .tarifs-box__title-head {
