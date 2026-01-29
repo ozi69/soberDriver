@@ -46,16 +46,20 @@
   font-family: Heading Now regular;
   letter-spacing: 0.1rem;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.2rem;
 
   position: absolute;
-  top: 1rem;
+  top: 2.2rem;
   left: 1.2rem;
 
   color: var(--color-black__800);
   background-color: var(--color-white__def);
+  text-transform: uppercase;
+
+  transition: 0.3s;
 }
+
 .input-def {
   padding: 2.5rem 1.2rem 1rem;
   border-radius: var(--border-12r);
@@ -67,20 +71,18 @@
   line-height: 2rem;
 
   color: var(--color-black__def-1000);
-
-  &::placeholder {
-    font-family: Inter;
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 2rem;
-
-    color: var(--color-gray--alt);
-    transition: 0.3s ease;
-  }
-  &:focus::placeholder {
-    color: transparent;
-  }
 }
+
+/* для анимации label */
+
+.input-def:focus + .label-def,
+.input-def:not(:placeholder-shown) + .label-def,
+.textarea-def:focus + .label-def,
+.textarea-def:not(:placeholder-shown) + .label-def {
+  top: 1rem;
+  font-size: 1.2rem;
+}
+
 .textarea-def {
   padding: 2.5rem 1.2rem 1rem;
   border-radius: var(--border-12r);
@@ -95,20 +97,6 @@
   line-height: 2rem;
 
   color: var(--color-black__def-1000);
-
-  &::placeholder {
-    font-family: Inter;
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 2rem;
-
-    color: var(--color-gray--alt);
-    transition: 0.3s ease;
-  }
-
-  &:focus::placeholder {
-    color: transparent;
-  }
 }
 .form-btn {
   font-family: Heading Now regular;

@@ -113,22 +113,15 @@
   cursor: pointer;
   z-index: 999;
 
+  position: relative;
+
   background-color: var(--color-puple--500);
   border-radius: var(--border-6r);
-  padding: 0.7rem;
+  padding: 0.4rem;
 
   @media (max-width: 767px) {
     display: flex;
   }
-}
-
-.burger span {
-  display: block;
-  width: 100%;
-  height: 0.2rem;
-  border-radius: var(--border-6r);
-  background-color: var(--color-white__def);
-  transition: all 0.3s ease;
 }
 
 /* Бургер меню */
