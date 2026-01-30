@@ -75,10 +75,7 @@
 }
 .card-comment__img {
   width: 12.8rem;
-  height: 12.8rem;
-
-  border-radius: 50%;
-  overflow: hidden;
+  height: 14.4rem;
 
   @media (max-width: 767px) {
     width: 9rem;
