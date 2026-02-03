@@ -56,13 +56,16 @@
   color: var(--color-white__def);
 
   @media (max-width: 767px) {
-    font-size: 3.4rem;
+    font-size: 3.2rem;
     line-height: 100%;
   }
 }
-.geo-head__title br {
+
+.geo-head__title-mobile {
+  display: none;
+
   @media (max-width: 767px) {
-    display: none;
+    display: unset;
   }
 }
 .geo-head__title-span {
@@ -70,10 +73,10 @@
 }
 .container-geo {
   display: flex;
-  gap: 6.4rem;
+  gap: 2.4rem;
 
   overflow-x: scroll;
-  padding-inline: 7.2rem;
+  padding-inline: 7.8rem;
 
   cursor: grab;
 

@@ -1,0 +1,259 @@
+.section-registration {
+}
+.container-registration {
+}
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  gap: 6.4rem;
+}
+.container-registration__block {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.container-registration__hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.container-registration__hgroup-title {
+  font-family: Heading Now regular;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+
+  @media (max-width: 767px) {
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+  }
+}
+.container-registration__hgroup-text {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.form-registration__box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 2.4rem;
+}
+.container-registration__block {
+}
+.form-registration__box-alt {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.box-label__text {
+}
+.address-city {
+}
+.form-box__block {
+  position: relative;
+}
+.form__block-select {
+}
+.form__block-select__span {
+  font-family: Heading Now regular;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.4rem;
+
+  color: var(--color-black__alt);
+  opacity: 70%;
+}
+.wrapper-text {
+  position: relative;
+}
+.form__block-select__text {
+  padding: 2.2rem 2rem;
+  border-radius: var(--border-12r);
+  width: 100%;
+  background-color: var(--color-puple--alt__02);
+
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+
+  color: rgba(17, 17, 17, 0.5);
+}
+.form__block-select__img {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  position: absolute;
+  right: 2.2rem;
+  top: 2.2rem;
+
+  transition: 0.3s ease;
+
+  svg {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+.form__block-select__img.rotate {
+  transform: rotate(180deg);
+}
+.form-box__block-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-dropdown {
+  display: none;
+  flex-direction: column;
+
+  z-index: 10;
+}
+.form-dropdown.active {
+  display: flex;
+  position: absolute;
+  width: 100%;
+}
+.dropdown-item {
+  padding: 2.2rem 2rem;
+  width: 100%;
+  background-color: var(--color-white__def);
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--color-black__def-1000);
+
+  transition: 0.3s ease;
+  border-bottom: 0.1rem solid var(--color-gray--200);
+
+  &:last-child {
+    border-radius: 0 0 var(--border-12r) var(--border-12r);
+    border-bottom: none;
+  }
+
+  &:hover {
+    background-color: var(--color-puple--alt);
+    cursor: pointer;
+    color: var(--color-white__def);
+  }
+}
+.dropdown__address-city {
+}
+.dropdown__address-city__item {
+}
+.select-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+  gap: 0.6rem;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.4rem;
+  }
+}
+.select-categories__item {
+  width: 8.7rem;
+  height: 8.7rem;
+
+  border-radius: var(--border-16r);
+  border: 0.1rem solid rgba(233, 233, 233, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  @media (max-width: 767px) {
+    width: unset;
+  }
+}
+.select-categories__item:has(input[type="checkbox"]:checked) {
+  border-color: var(--color-puple--500);
+
+  background-color: rgba(124, 96, 245, 0.1);
+}
+/* Визуальная обратная связь при наведении и выборе */
+.select-categories__item:hover {
+  background-color: rgba(124, 96, 245, 0.05);
+}
+.select-categories__item::after {
+  content: "";
+  background: url("../img/checkbox__img-2.svg") center/contain no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  position: absolute;
+  top: -0.7rem;
+  left: -0.7rem;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.select-categories__item:has(input:checked)::after {
+  opacity: 1;
+}
+.cats {
+  display: none;
+}
+.select-categories__item-text {
+  font-family: Heading Now regular;
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+
+  color: var(--color-puple--500);
+}
+.dropdown__tax-status {
+}
+.dropdown__tax-status__item {
+}
+
+.btn-form__registration {
+  font-family: Heading Now regular;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+
+  margin: 0 auto;
+}
+/*  */
+
+/* Для disabled поля */
+.input-def:disabled,
+.input-def.input-disabled {
+  background-color: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.form__block-select__text.selected {
+  color: var(--color-black__def-1000) !important;
+}
+
+/* Чтобы триггер выглядел как selectable */
+.form__block-select {
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn-form__registration:disabled,
+.btn-form__registration:disabled:hover,
+.btn-form__registration:disabled:active,
+.btn-form__registration:disabled:focus {
+  transform: none;
+  box-shadow: none;
+  cursor: unset;
+
+  background-color: rgba(124, 96, 245, 0.5);
+}

@@ -1,115 +1,95 @@
 .section-advertiser {
-  background-color: var(--color-black__def-1000);
 }
 .core-advertiser {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+  display: grid;
+  grid-template-columns: 60rem 1fr;
+  gap: 8rem;
 
   @media (max-width: 767px) {
-    align-items: unset;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
   }
 }
 .container-advertiser {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem;
-
-  width: 52rem;
+  gap: 5.6rem;
 
   @media (max-width: 767px) {
     width: unset;
+    gap: 3.2rem;
   }
 }
-.container-advertiser__title {
+.container-advertiser__hgroup {
   font-family: Heading Now regular;
   letter-spacing: 0.1rem;
   font-weight: 500;
   font-size: 5.6rem;
   line-height: 6.4rem;
 
-  color: var(--color-white__def);
-
   @media (max-width: 767px) {
     font-size: 3.4rem;
   }
 }
-.form-def {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.form-box {
-  position: relative;
-}
-.label-def {
-  font-family: Heading Now regular;
-  letter-spacing: 0.1rem;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 1.2rem;
-
-  position: absolute;
-  top: 2.2rem;
-  left: 1.2rem;
-
-  color: var(--color-black__800);
-  background-color: var(--color-white__def);
-  text-transform: uppercase;
-
-  transition: 0.3s;
-}
-
-.input-def {
-  padding: 2.5rem 1.2rem 1rem;
-  border-radius: var(--border-12r);
-  width: 100%;
-
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
-
-  color: var(--color-black__def-1000);
-}
-
-/* для анимации label */
-
-.input-def:focus + .label-def,
-.input-def:not(:placeholder-shown) + .label-def,
-.textarea-def:focus + .label-def,
-.textarea-def:not(:placeholder-shown) + .label-def {
-  top: 1rem;
-  font-size: 1.2rem;
-}
-
-.textarea-def {
-  padding: 2.5rem 1.2rem 1rem;
-  border-radius: var(--border-12r);
-  height: 14.4rem;
-  width: 100%;
-
-  padding: 2.7rem 1.2rem 1.7rem;
-
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2rem;
-
-  color: var(--color-black__def-1000);
-}
-.form-btn {
+.container-advertiser__hgroup-title {
   font-family: Heading Now regular;
   letter-spacing: 0.1rem;
   font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+
+  @media (max-width: 767px) {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+.container-advertiser__hgroup-text {
+  font-family: Inter;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 2.8rem;
-  text-transform: uppercase;
 
-  color: var(--color-white__def);
-  border-radius: var(--border-12r) !important;
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
 
-  padding-block: 1.8rem !important;
+.advertiser-img {
+  border: 0.1rem solid var(--color-gray--200);
+  border-radius: var(--border-40r);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 767px) {
+    padding: 0 1.6rem;
+    border-radius: var(--border-16r);
+
+    height: 36rem;
+  }
+}
+
+.advertiser-img__back {
+  position: absolute;
+  inset: 0;
+}
+.advertiser-img__item {
+  position: relative;
+
+  width: 50rem;
+  height: 58rem;
+
+  @media (max-width: 767px) {
+    height: 38rem;
+    width: 100%;
+
+    top: 3.2rem;
+  }
 }
 
 /*  */
@@ -118,7 +98,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.2rem;
   cursor: pointer;
   user-select: none;
 
@@ -138,6 +118,7 @@
     width: 2rem;
     height: 2rem;
     border-radius: var(--border-6r);
+    border: 0.1rem solid var(--color-puple--500);
     background: white;
     flex-shrink: 0;
   }
@@ -146,7 +127,9 @@
   .custom-checkbox::before {
     content: "";
     position: absolute;
-    inset: -0.2rem;
+    inset: -0.1rem;
+    width: 2.1rem;
+    height: 2.1rem;
     background: url("../img/Check-Box.svg") center/contain no-repeat;
     transition: opacity 0.2s ease;
     opacity: 0;
@@ -162,14 +145,10 @@
     font-family: Inter;
     font-weight: 500;
     font-size: 1.6rem;
+    color: var(--color-black__def-1000);
 
     @media (max-width: 767px) {
       font-size: 1.4rem;
-    }
-
-    a {
-      display: inline;
-      color: var(--color-puple--500);
     }
   }
 }

@@ -4,7 +4,7 @@
 
   @media (max-width: 767px) {
     flex-direction: column;
-    gap: 5rem;
+    gap: 1.6rem;
   }
 }
 .footer-block__one {
@@ -13,7 +13,7 @@
   gap: 3.8rem;
 
   @media (max-width: 767px) {
-    gap: 2rem;
+    gap: 1.6rem;
   }
 }
 .footer-logo {
@@ -21,7 +21,8 @@
   align-items: center;
   gap: 0.5rem;
 
-  font-family: Heading Now extrabold;
+  font-family: Heading Now regular;
+  font-weight: 700;
   letter-spacing: 0.1rem;
   font-size: 2rem;
   line-height: 2.4rem;
@@ -57,19 +58,29 @@
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
+
+  @media (max-width: 767px) {
+    gap: 1.6rem;
+  }
 }
 .foo-nav {
   display: flex;
-  gap: 12rem;
+  flex-direction: column;
+  gap: 2.4rem;
 
   @media (max-width: 767px) {
-    gap: 5rem;
+    gap: 1.6;
   }
 }
 .foo-nav__box {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.8rem;
+  }
 }
 .foo-nav__list {
   display: flex;
@@ -95,6 +106,12 @@
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+
+  @media (max-width: 767px) {
+    &:last-child {
+      margin-top: 0.8rem;
+    }
+  }
 }
 .foo-nav__dop-title {
   color: var(--color-white__def);
@@ -109,7 +126,7 @@
 .foo-nav__dop-list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 .foo-nav__dop-item {
 }
@@ -137,6 +154,9 @@
 }
 
 .footer-block__dowload {
-  width: 21.2rem;
-  height: 6.4rem;
+  width: 22rem;
+
+  @media (max-width: 767px) {
+    width: unset;
+  }
 }

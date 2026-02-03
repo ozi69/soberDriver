@@ -4,6 +4,11 @@
   height: 51.2rem;
 
   @media (max-width: 767px) {
-    height: 22rem;
+    height: 25rem;
+  }
+
+  img {
+    object-fit: cover;
+    object-position: 65%;
   }
 }

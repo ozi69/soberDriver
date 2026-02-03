@@ -24,13 +24,12 @@ details summary {
   align-items: center;
   gap: 3.2rem;
 
-  border-bottom: 0.1rem solid var(--color-black__def-1000_01);
-
   @media (max-width: 767px) {
     padding-inline: unset;
     gap: 1rem;
   }
 }
+
 details:hover summary .icon-box_summary {
   background-color: var(--color-puple--500);
 
@@ -74,6 +73,11 @@ details summary::-webkit-details-marker {
 }
 
 .accordion {
+  border-bottom: 0.1rem solid var(--color-black__def-1000_01);
+}
+
+.accordion:last-child {
+  border-bottom: unset;
 }
 
 .accordion_details {
@@ -148,7 +152,7 @@ details summary::-webkit-details-marker {
 
   p {
     font-family: Inter;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.6rem;
     line-height: 3.2rem;
 

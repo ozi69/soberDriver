@@ -10,10 +10,6 @@
   width: 31rem;
   font-size: 1.6rem;
   color: var(--color-black__def-1000);
-
-  @media (max-width: 767px) {
-    justify-content: center;
-  }
 }
 .aside-back__link {
   font-family: Inter;
@@ -58,6 +54,7 @@
 
   @media (max-width: 767px) {
     text-wrap: nowrap;
+    padding: 0.8rem 1.2rem;
   }
 
   &:hover {

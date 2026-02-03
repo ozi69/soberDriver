@@ -1,10 +1,10 @@
 .container-news {
   display: flex;
   flex-direction: column;
-  gap: 6.4rem;
+  gap: 4rem;
 
   @media (max-width: 767px) {
-    gap: 4rem;
+    gap: 1.6rem;
   }
 }
 .container-news__date {
@@ -19,7 +19,6 @@
 
 .container-news__title {
   font-family: Heading Now regular;
-  letter-spacing: 0.1rem;
   font-weight: 800;
   font-size: 6.4rem;
   line-height: 7.6rem;
@@ -27,8 +26,8 @@
   color: var(--color-black__def-1000);
 
   @media (max-width: 767px) {
-    font-size: 4rem;
-    line-height: 4.5rem;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
   }
 }
 .container-news__text {
@@ -53,10 +52,12 @@
   height: 51.2rem;
 
   @media (max-width: 767px) {
-    height: 20rem;
+    height: 36rem;
   }
   img {
     border-radius: var(--border-12r);
+    object-fit: cover;
+    object-position: 55%;
   }
 }
 .container-news__list {

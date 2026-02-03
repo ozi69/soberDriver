@@ -1,4 +1,11 @@
 .section-rewiews {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  @media (max-width: 767px) {
+    gap: 3.2rem;
+  }
 }
 .section-rewiews__title {
   font-family: Heading Now regular;
@@ -15,77 +22,62 @@
 .container-rewiews {
   display: flex;
   flex-direction: column;
+  gap: 1.6rem;
+
+  @media (max-width: 767px) {
+    gap: 3.2rem;
+  }
 }
 .card-rewiews {
   padding: 4.8rem 3.2rem;
-  border-bottom: 0.1rem solid var(--color-gray--200);
 
-  display: flex;
-  flex-direction: column;
-
-  @media (max-width: 767px) {
-    padding: 2.4rem 1.6rem;
-    gap: 1rem;
-  }
-
-  &:last-child {
-    border-bottom: unset;
-  }
-}
-.card-rewiews__img {
-  min-width: 12.8rem;
-  width: 12.8rem;
-  height: 12.8rem;
-
-  @media (max-width: 767px) {
-    width: 10rem;
-    min-width: 10rem;
-    height: 10rem;
-  }
-}
-.card-rewiews__content {
   display: flex;
   gap: 3.2rem;
 
   @media (max-width: 767px) {
-    gap: 2rem;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    padding: unset;
+  }
+}
+.card-rewiews__img {
+  width: 14rem;
+  min-width: 14rem;
+}
+.card-rewiews__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  width: 76rem;
+
+  @media (max-width: 767px) {
+    width: unset;
+    gap: 1.2rem;
   }
 }
 .card-rewiews__content-head {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 
-  @media (max-width: 757px) {
+  @media (max-width: 767px) {
+    justify-content: unsafe;
     flex-direction: column;
-    gap: 1.5rem;
-    justify-content: unset;
+    gap: 0.4rem;
   }
 }
-.card-rewiews__head-title {
+.card-rewiews__head-name {
   font-family: Heading Now regular;
-  letter-spacing: 0.1rem;
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.2rem;
-
-  color: var(--color-black__def-1000);
-
-  @media (max-width: 767px) {
-    font-size: 2.4rem;
-    line-height: 2.6rem;
-  }
 }
 .card-rewiews__head-date {
   font-family: Heading Now regular;
-  letter-spacing: 0.1rem;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 2.8rem;
-
-  @media (max-width: 767px) {
-    font-size: 2rem;
-  }
 }
 .card-rewiews__content-text {
   font-family: Inter;
@@ -93,10 +85,8 @@
   font-size: 2rem;
   line-height: 2.8rem;
 
-  padding-left: 12rem;
-
   @media (max-width: 767px) {
-    padding-left: unset;
     font-size: 1.6rem;
+    line-height: 2rem;
   }
 }

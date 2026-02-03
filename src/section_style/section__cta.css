@@ -29,7 +29,7 @@
 
     @media (max-width: 767px) {
       flex-direction: column;
-      gap: 4rem;
+      gap: 3.2rem;
     }
   }
   .block-cta {
@@ -40,6 +40,7 @@
     @media (max-width: 767px) {
       flex-direction: column;
 
+      gap: 1rem;
       text-align: center;
     }
   }
@@ -81,8 +82,8 @@
     color: var(--color-white__def);
 
     @media (max-width: 767px) {
-      font-size: 2rem;
-      line-height: 2.4rem;
+      font-size: 1.6rem;
+      line-height: 2rem;
     }
   }
   .container-cta__btn {
@@ -91,7 +92,16 @@
     font-size: 3.2rem;
     line-height: 3.2rem;
 
-    text-wrap: nowrap;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .container-cta__btn-alt {
+    font-family: Heading Now regular;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+
     padding-inline: 2rem !important;
 
     @media (max-width: 767px) {

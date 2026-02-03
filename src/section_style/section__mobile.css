@@ -42,20 +42,20 @@
   }
 }
 .container-mobile__block-img {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.2rem;
 
   @media (max-width: 767px) {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 }
-.mobile-block__img-link {
-  width: 20rem;
-  height: 6.4rem;
-
+.container-mobile__block-img__item {
   @media (max-width: 767px) {
-    width: 100%;
+    &:last-child {
+      grid-column: 1 / -1;
+    }
   }
 }
 .contianer-mobile__arguments {

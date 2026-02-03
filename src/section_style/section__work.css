@@ -56,11 +56,11 @@
   }
 }
 .card-work__img {
-  height: 28.4rem;
+  height: 27rem;
   width: 100%;
 
   @media (max-width: 767px) {
-    height: 20rem;
+    height: 24rem;
   }
 }
 .card-work__hgroup {

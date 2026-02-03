@@ -1,125 +1,44 @@
 .section-tarifs {
   width: 100%;
-}
-.section-tarifs__title {
-  font-family: Heading Now regular;
-  letter-spacing: 0.1rem;
-  font-weight: 800;
-  font-size: 5.6rem;
-  line-height: 6.4rem;
 
   @media (max-width: 767px) {
-    font-size: 2.2rem;
-    line-height: 3.2rem;
+    margin-top: 3.2rem;
   }
-}
-.section-tarifs__city {
-  color: var(--color-puple--500);
 }
 .container-tarifs {
-  margin-top: 2.4rem;
-  border-radius: var(--border-16r);
-  border: 0.1rem solid var(--color-gray--200);
-  padding: 3.2rem;
-
-  min-height: 60rem;
-
-  overflow: hidden;
-  @media (max-width: 767px) {
-    padding: 2.4rem 1.2rem;
-
-    width: unset;
-  }
-}
-.container-tarifs__tab {
   display: flex;
-  gap: 0.8rem;
-
-  width: fit-content;
-  margin: 0 auto;
-
-  padding: 0.4rem;
-  background-color: var(--color-gray--100);
-  border-radius: var(--border-128r);
+  flex-direction: column;
+  gap: 6.4rem;
 
   @media (max-width: 767px) {
-    overflow-x: scroll;
-    width: auto; /* изменить с 60rem на auto */
+    gap: 3.2rem;
   }
-}
-.tarifs-tab {
-  font-family: Heading Now regular;
-  letter-spacing: 0.1rem;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 2rem;
-
-  padding: 0.6rem 1.6rem;
-  border-radius: var(--border-128r);
-
-  transition: 0.3s ease;
-
-  @media (max-width: 767px) {
-    text-wrap: nowrap;
-  }
-}
-.tarifs-tab.active {
-  background-color: var(--color-white__def);
-  color: var(--color-puple--500);
 }
 .block-tarifs {
-  display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  display: grid;
+  grid-template-columns: 44rem 1fr;
 
-  /* анимация */
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  visibility: hidden;
-  transition:
-    opacity 0.5s ease,
-    height 0.5s ease;
+  gap: 4.8rem;
 
   @media (max-width: 767px) {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
   }
 }
 
-/* анимация */
-.block-tarifs.active {
-  opacity: 1;
-  height: auto;
-  overflow: visible;
-  pointer-events: all;
-  position: relative;
-  visibility: visible;
-  animation: fadeInUp 0.5s ease forwards;
-}
+.block-tarifs__alt {
+  grid-template-columns: 1fr 44rem;
 
-/* Анимация появления блока */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(-2rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
-/* КОНЕЦ */
 
 .block-tarifs__price {
-  margin-top: 4.8rem;
-
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-
-  width: 50rem;
 
   @media (max-width: 767px) {
     width: unset;
@@ -133,29 +52,12 @@
   border-bottom: 0.1rem solid var(--color-gray--100);
   padding-bottom: 1.6rem;
 
-  /* АНИМАЦИЯ */
-  /*  */
-  opacity: 0;
-  transform: translateX(-10rem);
-}
-
-.block-tarifs.active .tarifs-box {
-  animation: slideInLeft 1s ease forwards;
-  animation-delay: calc(var(--order, 0) * 0.1s);
-}
-
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  @media (max-width: 767px) {
+    &:last-child {
+      border-bottom: unset;
+    }
   }
 }
-
-/* КОНЕЦ  */
 
 .tarifs-box__title-head {
   font-family: Heading Now regular;
@@ -165,7 +67,8 @@
   line-height: 3.2rem;
 
   @media (max-width: 767px) {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
   }
 }
 .tarifs-box__title {
@@ -199,34 +102,12 @@
   line-height: 1.6rem;
 }
 .container-tarufs__img {
-  width: 38rem;
-  height: 42rem;
-
-  margin-top: auto;
-  /* АНИМАЦИЯ */
-  opacity: 0;
-  transform: translateX(10rem);
-
   @media (max-width: 767px) {
-    width: unset;
+    height: 25.6rem;
+  }
 
-    height: 30rem;
+  img {
+    border-radius: var(--border-24r);
+    object-fit: cover;
   }
 }
-
-.block-tarifs.active .container-tarufs__img {
-  animation: fadeInRight 0.5s ease 0.3s forwards;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* КОНЕЦ */
