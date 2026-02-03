@@ -1,6 +1,10 @@
 .section-blog {
-  ._container {
-    padding-inline: unset;
+}
+.section-blog__alt {
+  @media (max-width: 767px) {
+    ._container {
+      padding-inline: unset;
+    }
   }
 }
 .section-blog__title-h3 {
