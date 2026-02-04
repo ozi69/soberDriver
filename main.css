@@ -162,6 +162,16 @@
   margin: 0 auto;
 }
 
+._container-first {
+  padding: 4rem 7.2rem 8rem;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    padding: 3.2rem 1.6rem;
+  }
+}
 ._container {
   padding: 8rem 7.2rem;
   position: relative;
