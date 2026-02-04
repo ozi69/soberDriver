@@ -80,7 +80,9 @@ body {
     font-size: 0.639vw;
   }
   @media (max-width: 1920px) {
-    font-size: 0.6771vw;
+    /* font-size: 0.6771vw; */
+
+    font-size: 0.6vw;
   }
 
   @media (max-width: 767px) {
