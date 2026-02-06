@@ -120,9 +120,13 @@
   display: flex;
   position: absolute;
   width: 100%;
+
+  border: 0.1rem solid rgba(124, 96, 245, 0.1);
+  border-radius: var(--border-12r);
+  background-color: var(--color-white__def);
 }
 .dropdown-item {
-  padding: 2.2rem 2rem;
+  padding: 1.6rem 2rem;
   width: 100%;
   background-color: var(--color-white__def);
   font-family: Inter;
@@ -140,9 +144,9 @@
   }
 
   &:hover {
-    background-color: var(--color-puple--alt);
+    background-color: rgba(124, 96, 245, 0.05);
     cursor: pointer;
-    color: var(--color-white__def);
+    color: var(--color-puple--500);
   }
 }
 .dropdown__address-city {
@@ -247,10 +251,11 @@
   user-select: none;
 }
 
-.btn-form__registration:disabled,
-.btn-form__registration:disabled:hover,
-.btn-form__registration:disabled:active,
-.btn-form__registration:disabled:focus {
+.btn-form__registration.inactive,
+.btn-form__registration.inactive:hover,
+.btn-form__registration.inactive:active,
+.btn-form__registration.inactive:focus {
+  user-select: none;
   transform: none;
   box-shadow: none;
   cursor: unset;

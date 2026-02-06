@@ -8,12 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     checkbox.addEventListener('change', () => {
       addressInput.disabled = checkbox.checked;
       addressInput.classList.toggle('disabled-input', checkbox.checked);
-      checkFormValidity();           // ← добавлено
+      checkFormValidity();
     });
-    // если чекбокс уже стоит при загрузке
     addressInput.disabled = checkbox.checked;
   }
-
 
   // 2. Город работы
   const cityWrapper = document.querySelector('.form-box__block .wrapper-text');
@@ -43,11 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
         cityText.classList.add('selected');
         cityDropdown.classList.remove('active');
         cityArrow?.classList.remove('rotate');
-        checkFormValidity();           // ← добавлено
+        checkFormValidity();
       });
     });
   }
-
 
   // 3. Налоговый статус
   const taxWrapper = document.querySelector('.form-registration__box .wrapper-text');
@@ -77,11 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
         taxText.classList.add('selected');
         taxDropdown.classList.remove('active');
         taxArrow?.classList.remove('rotate');
-        checkFormValidity();           // ← добавлено
+        checkFormValidity();
       });
     });
   }
-
 
   // 4. Закрытие при клике вне
   document.addEventListener('click', (e) => {
@@ -98,12 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
   // ────────────────────────────────────────────────
-  // 5. Валидация кнопки «Продолжить»
+  // 5. Валидация ссылки «Продолжить»
   // ────────────────────────────────────────────────
 
-  const submitBtn = document.querySelector('.btn-form__registration');
+  const nextLink = document.querySelector('.btn-form__registration');
 
   // Все обязательные поля
   const requiredFields = document.querySelectorAll(`
@@ -113,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     #passport-mask,
     #passport-date,
     #passport-city,
-    #address-city:not(:disabled),
+    #address-city,
     #license-number,
     #license-date,
     #license-exp,
@@ -121,27 +116,49 @@ document.addEventListener('DOMContentLoaded', () => {
     #tax-inn
   `);
 
-  // Все чекбоксы категорий
   const categoryCheckboxes = document.querySelectorAll('.select-categories input[type="checkbox"]');
 
   function checkFormValidity() {
-    // Проверяем, что все видимые обязательные поля заполнены
-    const allFilled = Array.from(requiredFields).every(field => {
-      return field.value.trim() !== '';
+    let allFilled = true;
+
+    requiredFields.forEach(field => {
+      if (field.id === 'address-city' && field.disabled) {
+        return;
+      }
+      if (field.value.trim() === '') {
+        allFilled = false;
+      }
     });
 
-    // Проверяем, выбрана ли хотя бы одна категория
     const hasCategory = Array.from(categoryCheckboxes).some(cb => cb.checked);
 
-    // Кнопка активна только если ВСЁ заполнено
     const isValid = allFilled && hasCategory;
 
-    submitBtn.disabled = !isValid;
-
-    // Опционально: визуальная обратная связь
+    // Визуальное отключение
+    if (isValid) {
+      nextLink.classList.remove('inactive');
+    } else {
+      nextLink.classList.add('inactive');
+    }
   }
 
-  // Слушатели на все изменения
+  // Перехват клика (самая надёжная защита)
+  nextLink.addEventListener('click', function(e) {
+    let allFilled = true;
+
+    requiredFields.forEach(field => {
+      if (field.id === 'address-city' && field.disabled) return;
+      if (field.value.trim() === '') allFilled = false;
+    });
+
+    const hasCategory = Array.from(categoryCheckboxes).some(cb => cb.checked);
+
+    if (!(allFilled && hasCategory)) {
+      e.preventDefault();
+    }
+  });
+
+  // Слушатели на изменения
   requiredFields.forEach(field => {
     field.addEventListener('input', checkFormValidity);
     field.addEventListener('change', checkFormValidity);
@@ -151,7 +168,80 @@ document.addEventListener('DOMContentLoaded', () => {
     cb.addEventListener('change', checkFormValidity);
   });
 
-  // Первичная проверка при загрузке
+  // Первичная проверка
   checkFormValidity();
+});
 
+
+
+
+
+
+
+// ---------------------
+// страница регистрации по закгрузке фото
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const fileInput = document.getElementById('img');
+  const statusText = document.querySelector('.block-capture__hgroup h3');
+  const uploadButton = document.querySelector('.btn-dowload p');
+  const statusIcon = document.querySelector('.block-capture__content-img img');
+  const nextLink = document.querySelector('.link-dowload');
+
+  let photoUploaded = false; // флаг, загружено ли фото
+
+  // Функция обновления состояния кнопки
+  function updateButtonState() {
+    if (photoUploaded) {
+      nextLink.classList.remove('inactive');
+    } else {
+      nextLink.classList.add('inactive');
+    }
+  }
+
+  // Обработчик загрузки файла
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+
+    if (!file) {
+      // пользователь отменил выбор
+      photoUploaded = false;
+      updateButtonState();
+      return;
+    }
+
+    // Проверка размера (4 МБ = 4 * 1024 * 1024 байт)
+    const maxSize = 4 * 1024 * 1024; // 4 МБ
+    if (file.size > maxSize) {
+      alert('Файл слишком большой! Максимальный размер — 4 МБ.');
+      fileInput.value = ''; // очищаем input
+      photoUploaded = false;
+      updateButtonState();
+      return;
+    }
+
+    // Если всё ок — показываем успех
+    photoUploaded = true;
+    statusText.textContent = 'Фотография успешно загружена';
+    statusIcon.src = 'src/img/check_small.svg';
+    statusIcon.alt = 'Успешно загружено';
+    uploadButton.innerHTML = 'Заменить изображение';
+
+    // Активируем кнопку
+    updateButtonState();
+  });
+
+  // Перехват клика по ссылке «Продолжить»
+  nextLink.addEventListener('click', (e) => {
+    if (!photoUploaded) {
+      e.preventDefault();
+      // Можно добавить более заметную подсказку, если хочешь
+      // alert('Загрузите фотографию, чтобы продолжить');
+    }
+    // если фото загружено — переход произойдёт автоматически по href
+  });
+
+  // Начальное состояние
+  updateButtonState();
 });

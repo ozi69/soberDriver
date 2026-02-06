@@ -1,0 +1,156 @@
+.section-dowloand {
+}
+.container-dowload {
+  display: flex;
+  flex-direction: column;
+  gap: 9.6rem;
+
+  @media (max-width: 767px) {
+    gap: 6rem;
+  }
+}
+.core-dowload {
+  display: grid;
+  grid-template-columns: 68.4rem 55rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9rem;
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+}
+.block-dowload__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  @media (max-width: 767px) {
+    gap: unset;
+  }
+}
+.block-dowload__hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  h1 {
+    font-family: Heading Now regular;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 7.6rem;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      font-size: 3.2rem;
+      line-height: 4rem;
+    }
+  }
+
+  p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.8rem;
+
+    @media (max-width: 767px) {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+  }
+}
+
+/*  */
+
+.block-capture {
+  padding: 3.2rem;
+  border-radius: var(--border-40r);
+  border: 0.1rem solid rgba(234, 234, 237, 1);
+
+  height: 52.6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 12rem;
+
+  @media (max-width: 767px) {
+    height: 36rem;
+
+    gap: 6rem;
+  }
+}
+.block-capture__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.block-capture__content-img {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+.block-capture__hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  h3 {
+    font-family: Heading Now regular;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+  }
+
+  p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+  }
+}
+.btn-dowload {
+  width: fit-content;
+  margin: 0 auto;
+
+  font-family: Heading Now regular;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.link-dowload {
+  font-family: Heading Now regular;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (max-width: 767px) {
+    font-size: 3rem;
+    padding-inline: 2.4rem !important;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.link-dowload.inactive,
+.link-dowload.inactive:hover,
+.link-dowload.inactive:active,
+.link-dowload.inactive:focus {
+  user-select: none;
+  transform: none;
+  box-shadow: none;
+  cursor: unset;
+
+  background-color: rgba(124, 96, 245, 0.5);
+}

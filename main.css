@@ -29,6 +29,9 @@
 @import url(./src/section_style/section__contacts.css);
 @import url(./src/section_style/section__team.css);
 @import url(./src/section_style/section__registration.css);
+@import url(./src/section_style/section__error.css);
+@import url(./src/section_style/section__dowload.css);
+@import url(./src/section_style/section__end.css);
 
 /* modal */
 @import url(./src/section_style/modal__select-city.css);
